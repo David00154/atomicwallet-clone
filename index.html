@@ -1,0 +1,2237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><!-- Google Tag Manager -->
+    <script type="text/javascript" async=""
+        src="https://www.googletagmanager.com/gtag/js?id=G-D9N0F31EC1&amp;l=dataLayer&amp;cx=c"></script>
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-KBC3CH8"></script>
+    <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-KBC3CH8');</script>
+    <!-- End Google Tag Manager -->
+    <style>
+        body {
+            font-family: "Roboto", "Open Sans", sans-serif;
+        }
+
+        [class^="icon-"],
+        [class*=" icon-"] {
+            -xv-speak: none;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: normal;
+            font-size: 3em;
+            background-clip: text !important;
+            -webkit-background-clip: text !important;
+            -webkit-text-fill-color: transparent !important;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            padding: 1px;
+        }
+
+        .icon-erc20,
+        .bg-erc20 {
+            background: linear-gradient(to bottom, #e7f8ff 0%, #627eea 100%);
+        }
+
+        .icon-busd,
+        .bg-busd {
+            background: linear-gradient(180deg, #F9C31B 0%, #D5A50F 107.19%);
+        }
+
+        .icon-aave,
+        .bg-aave,
+        .icon-lend,
+        .bg-lend {
+            background: linear-gradient(180deg, #31ABBC -10.77%, #A74B95 100%);
+        }
+
+        .icon-band,
+        .bg-band {
+            background: linear-gradient(71.57deg, #0E9DE5 22.5%, #26DB8D 74.42%);
+        }
+
+        .icon-dot,
+        .bg-dot {
+            background: linear-gradient(to bottom, #E6007A 0%, #E6007A 100%)
+        }
+
+        .icon-algo,
+        .bg-algo {
+            background: linear-gradient(180deg, #E4E4E4 0%, #AAAAAA 100%);
+        }
+
+        .icon-kmd,
+        .bg-kmd {
+            background: linear-gradient(to bottom, #00ECD5 0%, #1B456F 100%);
+        }
+
+        .icon-xmr,
+        .bg-xmr {
+            background: linear-gradient(to bottom, #ef7d48 0%, #fd6709 100%);
+        }
+
+        .icon-zil,
+        .bg-zil {
+            background: linear-gradient(to bottom, #49c1bf 0%, #298e97 100%);
+        }
+
+        .icon-xtz,
+        .bg-xtz {
+            background: linear-gradient(to bottom, #888 0%, #8a8a8a 100%);
+        }
+
+        .icon-xrp,
+        .bg-xrp {
+            background: linear-gradient(to bottom, #52b3ff 0%, #2989d8 100%);
+        }
+
+        .icon-usdc,
+        .bg-usdc {
+            background: linear-gradient(to bottom, #3998FF 0%, #2775CA 100%);
+        }
+
+        .icon-trx,
+        .bg-trx {
+            background: linear-gradient(to bottom, #fc2d38 0%, #a50009 100%);
+        }
+
+        .icon-sol,
+        .bg-sol {
+            background: linear-gradient(to bottom, #12F0B3 0%, #C44BE5 100%);
+        }
+
+        .icon-mkr,
+        .bg-mkr {
+            background: linear-gradient(to bottom, #1abc9c 0%, #546979 100%);
+        }
+
+        .icon-ltc,
+        .bg-ltc {
+            background: linear-gradient(to bottom, #888 0%, #848484 100%);
+        }
+
+        .icon-eth,
+        .bg-eth {
+            background: linear-gradient(to bottom, #00a5f1 0%, #627eea 100%);
+        }
+
+        .icon-near,
+        .bg-near {
+            background: linear-gradient(to bottom, #DCD7FF 0%, #9B92D4 100%);
+        }
+
+        .icon-doge,
+        .bg-doge {
+            background: linear-gradient(to bottom, #e0cd81 0%, #bb9f32 100%);
+        }
+
+        .icon-dash,
+        .bg-dash {
+            background: linear-gradient(to bottom, #6ac1ff 0%, #2677ba 100%);
+        }
+
+        .icon-btc,
+        .bg-btc {
+            background: linear-gradient(to bottom, #ffa639 0%, #f76a1a 100%);
+        }
+
+        .icon-bsv,
+        .bg-bsv {
+            background: linear-gradient(to bottom, #ffd84b 0%, #8a7407 100%);
+        }
+
+        .icon-bnb,
+        .bg-bnb {
+            background: linear-gradient(to bottom, #f8d175 0%, #f4c148 100%);
+        }
+
+        .icon-awc,
+        .bg-awc {
+            background: linear-gradient(to bottom, #F8D175 0%, #F4C148 100%);
+        }
+
+        .icon-ada,
+        .bg-ada {
+            background: linear-gradient(to bottom, #388cff 0%, #096df3 100%);
+        }
+
+        .icon-eos,
+        .bg-eos {
+            background: linear-gradient(to bottom, #65ccfb 0%, #f5823e 100%);
+        }
+
+        .icon-ethos,
+        .bg-ethos {
+            background: linear-gradient(to bottom, #00ffbb 0%, #00cfab 100%);
+        }
+
+        .icon-ftm,
+        .bg-ftm {
+            background-color: #4270fe;
+        }
+
+        .icon-icx,
+        .bg-icx {
+            background: linear-gradient(to bottom, #8beeca 0%, #1fc5c9 100%);
+        }
+
+        .icon-iota,
+        .bg-iota {
+            background: linear-gradient(to bottom, #DCD7FF 0%, #9B92D4 100%);
+        }
+
+        .icon-lrc,
+        .bg-lrc {
+            background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+        }
+
+        .icon-lstr,
+        .bg-lstr {
+            background: linear-gradient(to bottom, #d600ff 0%, #7300ff 100%);
+        }
+
+        .icon-ltc,
+        .bg-ltc {
+            background: linear-gradient(to bottom, #888 0%, #848484 100%);
+        }
+
+        .icon-lunc,
+        .bg-lunc {
+            background: linear-gradient(to bottom, #FED823 0%, #FD6E00 100%);
+        }
+
+        .icon-nft,
+        .bg-nft,
+        .icon-NFT,
+        .bg-NFT {
+            background: linear-gradient(to bottom, #00A5B9 0%, #02CC9F 100%);
+        }
+
+        .icon-osmo,
+        .bg-osmo {
+            background: linear-gradient(to bottom, #CE01CE 0%, #400DE2 100%);
+        }
+
+        .icon-shib,
+        .bg-shib {
+            background: linear-gradient(to bottom, #FFA409 0%, #F00500 100%);
+        }
+
+        .icon-theta,
+        .bg-theta {
+            background: linear-gradient(to bottom, #2ee4be 0%, #2ab8e6 100%);
+        }
+
+        .icon-usdt,
+        .bg-usdt {
+            background: linear-gradient(to bottom, #2dca91 0%, #26a17b 100%);
+        }
+
+        .icon-vet,
+        .bg-vet {
+            background: linear-gradient(to bottom, #41d4fc 0%, #15bdff 100%);
+        }
+
+        .icon-xlm,
+        .bg-xlm {
+            background: linear-gradient(to bottom, #828282 0%, #000000 100%);
+        }
+
+        .icon-kin,
+        .bg-kin {
+            background: linear-gradient(to bottom, #C05AFF 0%, #7A00E7 100%);
+        }
+
+        .icon-lsk,
+        .bg-lsk {
+            background: linear-gradient(to bottom, #084591 0%, #8785FF 100%);
+        }
+
+        .icon-nem,
+        .icon-xem,
+        .bg-xem,
+        .bg-nem {
+            background: linear-gradient(to bottom, #FFAD00 0%, #00D5C3 100%);
+        }
+
+        .icon-matic,
+        .bg-matic {
+            background: linear-gradient(to bottom, #2BBDF7 0%, #2B6DEF 100%);
+        }
+
+        .icon-usds {
+            background: linear-gradient(to bottom, #5C90E8 0%, #1F56B2 100%);
+        }
+
+        .icon-vtho,
+        .bg-vtho {
+            background: linear-gradient(to bottom, #4BD7FD 0%, #0799D2 100%);
+        }
+
+        .icon-awc-986,
+        .bg-awc-986 {
+            background: linear-gradient(to bottom, #f8d175 0%, #f4c148 100%);
+        }
+
+        .icon-ont,
+        .bg-ont {
+            background: linear-gradient(to bottom, #58A9FF 0%, #2B85E3 100%);
+        }
+
+        .icon-atom,
+        .bg-atom {
+            background: linear-gradient(to bottom, #c7c7c7 0%, #8785FF 100%);
+        }
+
+        .icon-bnbTokenDefault,
+        .bg-bnbTokenDefault {
+            background: linear-gradient(to bottom, #f8d175 0%, #f4c148 100%);
+        }
+
+        .icon-hbar,
+        .bg-hbar {
+            background: linear-gradient(180deg, #F3F3F3 0%, #8F8DFF 100%);
+        }
+
+        .icon-kava,
+        .bg-kava {
+            background: linear-gradient(180deg, #FF444E 0%, #EF1D28 100%)
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <link rel="canonical" href="https://atomicwallet.io">
+    <link rel="icon" type="image/png" href="/images/logo.ico">
+    <link rel="preload" as="image" href="/images/mobile-interface-slider/atomic-wallet-mobile-app.webp" width="300px"
+        height="505px">
+    <link rel="preload" as="image" href="/images/download/google-play-icon.svg">
+    <link rel="preload" as="image" href="/images/download/appstore-icon.svg">
+    <link rel="preload" as="image" href="/images/download/DownloadAPK.svg">
+    <style type="text/css">
+        @import url(https://cdn.jsdelivr.net/npm/open-sans-all@0.1.3/css/open-sans.min.css);
+      </style>
+      <style type="text/css">
+        @font-face {
+          font-family: "Din";
+          src: url("https://keyst.one/statics/fonts/mainsite/din_regular.ttf")
+        }
+    
+        @font-face {
+          font-family: "DinBold";
+          src: url("https://keyst.one/statics/fonts/mainsite/din_bold.ttf")
+        }
+    
+        @font-face {
+          font-family: "DinLight";
+          src: url("https://keyst.one/statics/fonts/mainsite/din_light.ttf")
+        }
+    
+        @font-face {
+          font-family: "DinNext";
+          src: url("https://keyst.one/statics/fonts/mainsite/DINNextLTPro-BoldCondensed.ttf")
+        }
+    
+        @font-face {
+          font-family: "MontserratLight";
+          src: url("https://keyst.one/statics/fonts/mainsite/Montserrat-Light.ttf")
+        }
+    
+        @font-face {
+          font-family: "MontserratMedium";
+          src: url("https://keyst.one/statics/fonts/mainsite/Montserrat-Medium.ttf")
+        }
+    
+        @font-face {
+          font-family: "Montserrat";
+          src: url("https://keyst.one/statics/fonts/mainsite/Montserrat-Regular.ttf")
+        }
+    
+        @font-face {
+          font-family: "MontserratBold";
+          src: url("https://keyst.one/statics/fonts/mainsite/Montserrat-Bold.ttf")
+        }
+    
+        @font-face {
+          font-family: "Montserrat-Light";
+          src: url("https://keyst.one/statics/fonts/mainsite/Montserrat-Light.ttf")
+        }
+    
+        @font-face {
+          font-family: "Montserrat-Medium";
+          src: url("https://keyst.one/statics/fonts/mainsite/Montserrat-Medium.ttf")
+        }
+    
+        @font-face {
+          font-family: "Montserrat-Bold";
+          src: url("https://keyst.one/statics/fonts/mainsite/Montserrat-Bold.ttf")
+        }
+    
+        @font-face {
+          font-family: "Montserrat-Thin";
+          src: url("https://keyst.one/statics/fonts/mainsite/Montserrat-Thin.ttf")
+        }
+    
+        @font-face {
+          font-family: "Montserrat-SemiBold";
+          src: url("https://keyst.one/statics/fonts/mainsite/Montserrat-SemiBold.ttf")
+        }
+    
+        @font-face {
+          font-family: "Mont";
+          src: url("https://keyst.one/statics/fonts/mainsite/Mont-Regular.ttf")
+        }
+      </style>
+    <link rel="preload" as="style" href="/assets/main.css">
+    <link rel="stylesheet" type="text/css" href="/assets/main.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/custom-style.css">
+    <title>Atomic Wallet - Buy, Stake and Exchange in One Crypto Wallet</title>
+    <meta name="description"
+        content="Secure cryptocurrency wallet app for desktop and mobile platforms to store Bitcoin, Ethereum &amp;amp; over 500 other tokens. Download Atomic wallet to buy, exchange &amp;amp; stake crypto.">
+    <meta name="keywords" content="">
+    <meta name="twitter:title" content="Atomic Wallet - Buy, Stake and Exchange in One Crypto Wallet">
+    <meta name="twitter:description"
+        content="Secure cryptocurrency wallet app for desktop and mobile platforms to store Bitcoin, Ethereum &amp;amp; over 500 other tokens. Download Atomic wallet to buy, exchange &amp;amp; stake crypto.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image"
+        content="https://atomicwallet.io/optimized-images/cryptocurrency_bitcoin_wallet-1300w.png">
+    <script
+        type="application/ld+json"> { "@context":"http://schema.org", "@type":"SoftwareApplication", "name":"Atomic Wallet", "operatingSystem":"WINDOWS, OSX, IOS, ANDROID", "applicationCategory":"http://schema.org/FinanceApplication", "downloadUrl":"https://atomicwallet.io", "aggregateRating": { "@type":"AggregateRating", "ratingValue":"4.3", "ratingCount":"39755" }, "offers": { "@type":"Offer", "price":"0", "priceCurrency":"USD" } } </script>
+    <script
+        type="application/ld+json"> { "@context":"http://schema.org", "@type":"Article", "name":"Atomic Wallet", "@id":"https://atomicwallet.io/en/#article", "url":"https://atomicwallet.io/en", "inLanguage":"en", "mainEntityOfPage":"https://atomicwallet.io/en", "headline":"Atomic Wallet - Buy, Stake and Exchange in One Crypto Wallet", "description":"Secure cryptocurrency wallet app for desktop and mobile platforms to store Bitcoin, Ethereum &amp;amp; over 500 other tokens. Download Atomic wallet to buy, exchange &amp;amp; stake crypto.", "articleBody":"", "keywords":"", "datePublished":"2020-02-13T16:53:02+03:00", "dateModified":"2023-04-12T06:15:03.660Z", "author":{ "@type":"Person", "name":"admin", "description":"", "url":"https://atomicwallet.io/author/admin", "sameAs":[], "image":{ "@type":"ImageObject", "url":"http://2.gravatar.com/avatar/e820bb4aba5ad74c5a6ff1aca16641f6?s=96&d=mm&r=g", "height":96, "width":96 } }, "publisher":{ "@type":"Organization", "name":"Atomic Wallet", "logo":{ "@type":"ImageObject", "url":"", "width":"", "height":"" } } } </script>
+</head>
+
+<body><!-- Google Tag Manager (noscript) --><noscript><iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-KBC3CH8" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript><!-- End Google Tag Manager (noscript) -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="header-row">
+                <div class="header-col header-col-logo">
+                    <div class="logo"><a href="/ "><img src="/images/logo.svg" alt="site-logo"></a></div>
+                </div>
+                <div class="for-mobile"></div>
+                <div class="header-col header-col-menu">
+                    <div class="dropdown">
+                        <div class="dropdown__value"> Buy crypto </div>
+                        <div class="dropdown__body">
+                            <div class="dropdown__list">
+                                <p class="dropdown__list-title">Buy crypto</p>
+                                <ul class="dropdown__list-items">
+                                    <li><a aria-label="it is a link to /buy-bitcoin" href="/buy-bitcoin"
+                                            class="dropdown-item"><i class="dropdown-item__icon icon icon-btc"></i><span
+                                                class="dropdown-item__name">Buy Bitcoin</span></a></li>
+                                    <li><a aria-label="it is a link to /buy-ethereum" href="/buy-ethereum"
+                                            class="dropdown-item"><i class="dropdown-item__icon icon icon-eth"></i><span
+                                                class="dropdown-item__name">Buy Ethereum</span></a></li>
+                                    <li><a aria-label="it is a link to /buy-binance-coin" href="/buy-binance-coin"
+                                            class="dropdown-item"><i class="dropdown-item__icon icon icon-bnb"></i><span
+                                                class="dropdown-item__name">Buy Binance Coin</span></a></li>
+                                    <li><a aria-label="it is a link to /buy-bitcoin-cash" href="/buy-bitcoin-cash"
+                                            class="dropdown-item"><i class="dropdown-item__icon icon icon-bch"></i><span
+                                                class="dropdown-item__name">Buy Bitcoin Cash</span></a></li>
+                                    <li><a aria-label="it is a link to /buy-ripple" href="/buy-ripple"
+                                            class="dropdown-item"><i class="dropdown-item__icon icon icon-xrp"></i><span
+                                                class="dropdown-item__name">Buy XRP</span></a></li>
+                                    <li><a aria-label="it is a link to /buy-litecoin" href="/buy-litecoin"
+                                            class="dropdown-item"><i class="dropdown-item__icon icon icon-ltc"></i><span
+                                                class="dropdown-item__name">Buy Litecoin</span></a></li>
+                                    <li><a aria-label="it is a link to /buy-solana" href="/buy-solana"
+                                            class="dropdown-item"><i class="dropdown-item__icon icon icon-sol"></i><span
+                                                class="dropdown-item__name">Buy Solana</span></a></li>
+                                    <li><a aria-label="it is a link to /buy-dogecoin" href="/buy-dogecoin"
+                                            class="dropdown-item"><i
+                                                class="dropdown-item__icon icon icon-doge"></i><span
+                                                class="dropdown-item__name">Dogecoin</span></a></li>
+                                    <li><a aria-label="it is a link to /buy-terra-luna" href="/buy-terra-luna"
+                                            class="dropdown-item"><i
+                                                class="dropdown-item__icon icon icon-luna"></i><span
+                                                class="dropdown-item__name">Buy Luna</span></a></li>
+                                    <li><a aria-label="it is a link to /buy-tether-usd" href="/buy-tether-usd"
+                                            class="dropdown-item"><i
+                                                class="dropdown-item__icon icon icon-usdt"></i><span
+                                                class="dropdown-item__name">Buy USDT</span></a></li>
+                                    <li><a aria-label="it is a link to /buy-cardano" href="/buy-cardano"
+                                            class="dropdown-item"><i class="dropdown-item__icon icon icon-ada"></i><span
+                                                class="dropdown-item__name">Buy Cardano</span></a></li>
+                                    <li><a aria-label="it is a link to /buy-algorand" href="/buy-algorand"
+                                            class="dropdown-item"><i
+                                                class="dropdown-item__icon icon icon-algo"></i><span
+                                                class="dropdown-item__name">Buy Algorand</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="dropdown__value"> Stake &amp; Earn </div>
+                        <div class="dropdown__body">
+                            <div class="dropdown__list">
+                                <p class="dropdown__list-title">Stake &amp; Earn</p>
+                                <ul class="dropdown__list-items">
+                                    <li><a aria-label="it is a link to /awc-staking" href="/awc-staking"
+                                            class="dropdown-item"><i class="dropdown-item__icon icon icon-awc"></i><span
+                                                class="dropdown-item__name">AWC</span></a></li>
+                                    <li><a aria-label="it is a link to /near-staking" href="/near-staking"
+                                            class="dropdown-item"><i
+                                                class="dropdown-item__icon icon icon-near"></i><span
+                                                class="dropdown-item__name">Near Protocol</span></a></li>
+                                    <li><a aria-label="it is a link to /solana-staking" href="/solana-staking"
+                                            class="dropdown-item"><i class="dropdown-item__icon icon icon-sol"></i><span
+                                                class="dropdown-item__name">Solana</span></a></li>
+                                    <li><a aria-label="it is a link to /cardano-staking" href="/cardano-staking"
+                                            class="dropdown-item"><i class="dropdown-item__icon icon icon-ada"></i><span
+                                                class="dropdown-item__name">Cardano</span></a></li>
+                                    <li><a aria-label="it is a link to /zilliqa-staking" href="/zilliqa-staking"
+                                            class="dropdown-item"><i class="dropdown-item__icon icon icon-zil"></i><span
+                                                class="dropdown-item__name">Zilliqa</span></a></li>
+                                    <li><a aria-label="it is a link to /icon-staking" href="/icon-staking"
+                                            class="dropdown-item"><i class="dropdown-item__icon icon icon-icx"></i><span
+                                                class="dropdown-item__name">ICON</span></a></li>
+                                    <li><a aria-label="it is a link to /cosmos-atom-staking" href="/cosmos-atom-staking"
+                                            class="dropdown-item"><i
+                                                class="dropdown-item__icon icon icon-atom"></i><span
+                                                class="dropdown-item__name">Cosmos</span></a></li>
+                                    <li><a aria-label="it is a link to /tezos-staking" href="/tezos-staking"
+                                            class="dropdown-item"><i class="dropdown-item__icon icon icon-xtz"></i><span
+                                                class="dropdown-item__name">Tezos</span></a></li>
+                                    <li><a aria-label="it is a link to /band-staking" href="/band-staking"
+                                            class="dropdown-item"><i
+                                                class="dropdown-item__icon icon icon-band"></i><span
+                                                class="dropdown-item__name">Band</span></a></li>
+                                    <li><a aria-label="it is a link to /tron-trx-staking" href="/tron-trx-staking"
+                                            class="dropdown-item"><i class="dropdown-item__icon icon icon-trx"></i><span
+                                                class="dropdown-item__name">Tron</span></a></li>
+                                </ul><a href=" /staking " class="dropdown__list-link" target="_blank">All Assets</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="dropdown__value"> Wallets </div>
+                        <div class="dropdown__body">
+                            <div class="dropdown__list">
+                                <p class="dropdown__list-title">Wallets</p>
+                                <ul class="dropdown__list-items">
+                                    <li><a aria-label="it is a link to /nft-wallet" href="/nft-wallet"
+                                            class="dropdown-item"><i class="dropdown-item__icon icon icon-nft"></i><span
+                                                class="dropdown-item__name">NFT</span></a></li>
+                                    <li><a aria-label="it is a link to /bitcoin-wallet" href="/bitcoin-wallet"
+                                            class="dropdown-item"><i class="dropdown-item__icon icon icon-btc"></i><span
+                                                class="dropdown-item__name">Bitcoin</span></a></li>
+                                    <li><a aria-label="it is a link to /solana-wallet" href="/solana-wallet"
+                                            class="dropdown-item"><i class="dropdown-item__icon icon icon-sol"></i><span
+                                                class="dropdown-item__name">Solana</span></a></li>
+                                    <li><a aria-label="it is a link to /monero-wallet" href="/monero-wallet"
+                                            class="dropdown-item"><i class="dropdown-item__icon icon icon-xmr"></i><span
+                                                class="dropdown-item__name">Monero</span></a></li>
+                                    <li><a aria-label="it is a link to /ethereum-wallet" href="/ethereum-wallet"
+                                            class="dropdown-item"><i class="dropdown-item__icon icon icon-eth"></i><span
+                                                class="dropdown-item__name">Ethereum</span></a></li>
+                                    <li><a aria-label="it is a link to /tether-usdt-wallet" href="/tether-usdt-wallet"
+                                            class="dropdown-item"><i
+                                                class="dropdown-item__icon icon icon-usdt"></i><span
+                                                class="dropdown-item__name">Tether</span></a></li>
+                                    <li><a aria-label="it is a link to /algorand-wallet" href="/algorand-wallet"
+                                            class="dropdown-item"><i
+                                                class="dropdown-item__icon icon icon-algo"></i><span
+                                                class="dropdown-item__name">Algorand</span></a></li>
+                                    <li><a aria-label="it is a link to /cardano-wallet" href="/cardano-wallet"
+                                            class="dropdown-item"><i class="dropdown-item__icon icon icon-ada"></i><span
+                                                class="dropdown-item__name">Cardano</span></a></li>
+                                    <li><a aria-label="it is a link to /theta-wallet" href="/theta-wallet"
+                                            class="dropdown-item"><i
+                                                class="dropdown-item__icon icon icon-theta"></i><span
+                                                class="dropdown-item__name">Theta</span></a></li>
+                                    <li><a aria-label="it is a link to /polygon-wallet" href="/polygon-wallet"
+                                            class="dropdown-item"><i
+                                                class="dropdown-item__icon icon icon-matic"></i><span
+                                                class="dropdown-item__name">Polygon</span></a></li>
+                                    <li><a aria-label="it is a link to /litecoin-wallet" href="/litecoin-wallet"
+                                            class="dropdown-item"><i class="dropdown-item__icon icon icon-ltc"></i><span
+                                                class="dropdown-item__name">Litecoin</span></a></li>
+                                    <li><a aria-label="it is a link to /near-protocol-wallet"
+                                            href="/near-protocol-wallet" class="dropdown-item"><i
+                                                class="dropdown-item__icon icon icon-near"></i><span
+                                                class="dropdown-item__name">Near</span></a></li>
+                                    <li><a aria-label="it is a link to /dogecoin-wallet" href="/dogecoin-wallet"
+                                            class="dropdown-item"><i
+                                                class="dropdown-item__icon icon icon-doge"></i><span
+                                                class="dropdown-item__name">Dogecoin</span></a></li>
+                                    <li><a aria-label="it is a link to /tezos-wallet" href="/tezos-wallet"
+                                            class="dropdown-item"><i class="dropdown-item__icon icon icon-xtz"></i><span
+                                                class="dropdown-item__name">Tezos</span></a></li>
+                                    <li><a aria-label="it is a link to /avalanche-wallet" href="/avalanche-wallet"
+                                            class="dropdown-item"><i
+                                                class="dropdown-item__icon icon icon-avax"></i><span
+                                                class="dropdown-item__name">Avalanche </span></a></li>
+                                    <li><a aria-label="it is a link to /bitcoin-cash-wallet" href="/bitcoin-cash-wallet"
+                                            class="dropdown-item"><i class="dropdown-item__icon icon icon-bch"></i><span
+                                                class="dropdown-item__name">Bitcoin Cash</span></a></li>
+                                    <li><a aria-label="it is a link to /iota-wallet" href="/iota-wallet"
+                                            class="dropdown-item"><i
+                                                class="dropdown-item__icon icon icon-iota"></i><span
+                                                class="dropdown-item__name">Iota</span></a></li>
+                                    <li><a aria-label="it is a link to /tron-wallet" href="/tron-wallet"
+                                            class="dropdown-item"><i class="dropdown-item__icon icon icon-trx"></i><span
+                                                class="dropdown-item__name">Tron</span></a></li>
+                                    <li><a aria-label="it is a link to /polkadot-wallet" href="/polkadot-wallet"
+                                            class="dropdown-item"><i class="dropdown-item__icon icon icon-dot"></i><span
+                                                class="dropdown-item__name">Polkadot </span></a></li>
+                                    <li><a aria-label="it is a link to /eos-wallet" href="/eos-wallet"
+                                            class="dropdown-item"><i class="dropdown-item__icon icon icon-eos"></i><span
+                                                class="dropdown-item__name">EOS</span></a></li>
+                                    <li><a aria-label="it is a link to /fantom-ftm-wallet" href="/fantom-ftm-wallet"
+                                            class="dropdown-item"><i class="dropdown-item__icon icon icon-ftm"></i><span
+                                                class="dropdown-item__name">Fantom</span></a></li>
+                                    <li><a aria-label="it is a link to /neo-wallet" href="/neo-wallet"
+                                            class="dropdown-item"><i class="dropdown-item__icon icon icon-neo"></i><span
+                                                class="dropdown-item__name">NEO</span></a></li>
+                                </ul><a href=" /prices " class="dropdown__list-link" target="_blank">All Wallets</a>
+                            </div>
+                            <div class="dropdown__list">
+                                <p class="dropdown__list-title">Exchanges</p>
+                                <ul class="dropdown__list-items">
+                                    <li><a aria-label="it is a link to /btc-to-eth-exchange" href="/btc-to-eth-exchange"
+                                            class="dropdown-item"><span class="dropdown-item__name">Exchange BTC to
+                                                ETH</span></a></li>
+                                    <li><a aria-label="it is a link to /eth-to-btc-exchange" href="/eth-to-btc-exchange"
+                                            class="dropdown-item"><span class="dropdown-item__name">Exchange ETH to
+                                                BTC</span></a></li>
+                                    <li><a aria-label="it is a link to /bnb-to-usdt-exchange"
+                                            href="/bnb-to-usdt-exchange" class="dropdown-item"><span
+                                                class="dropdown-item__name">Exchange BNB to USDT</span></a></li>
+                                    <li><a aria-label="it is a link to /sol-to-eth-exchange" href="/sol-to-eth-exchange"
+                                            class="dropdown-item"><span class="dropdown-item__name">Exchange SOL to
+                                                ETH</span></a></li>
+                                    <li><a aria-label="it is a link to /btc-to-usdt-exchange"
+                                            href="/btc-to-usdt-exchange" class="dropdown-item"><span
+                                                class="dropdown-item__name">Exchange BTC to USDT</span></a></li>
+                                    <li><a aria-label="it is a link to /eth-to-usdt-exchange"
+                                            href="/eth-to-usdt-exchange" class="dropdown-item"><span
+                                                class="dropdown-item__name">Exchange ETH to USDT</span></a></li>
+                                    <li><a aria-label="it is a link to /matic-to-eth-exchange"
+                                            href="/matic-to-eth-exchange" class="dropdown-item"><span
+                                                class="dropdown-item__name">Exchange MATIC to ETH</span></a></li>
+                                    <li><a aria-label="it is a link to /bnb-to-btc-exchange" href="/bnb-to-btc-exchange"
+                                            class="dropdown-item"><span class="dropdown-item__name">Exchange BNB to
+                                                BTC</span></a></li>
+                                    <li><a aria-label="it is a link to /xmr-to-btc-exchange" href="/xmr-to-btc-exchange"
+                                            class="dropdown-item"><span class="dropdown-item__name">Exchange XMR to
+                                                BTC</span></a></li>
+                                    <li><a aria-label="it is a link to /avax-to-bnb-exchange"
+                                            href="/avax-to-bnb-exchange" class="dropdown-item"><span
+                                                class="dropdown-item__name">Exchange AVAX to BNB</span></a></li>
+                                    <li><a aria-label="it is a link to /bnb-to-eth-exchange" href="/bnb-to-eth-exchange"
+                                            class="dropdown-item"><span class="dropdown-item__name">Exchange BNB to
+                                                ETH</span></a></li>
+                                    <li><a aria-label="it is a link to /ltc-to-btc-exchange" href="/ltc-to-btc-exchange"
+                                            class="dropdown-item"><span class="dropdown-item__name">Exchange LTC to
+                                                BTC</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="dropdown__value"> SUPPORT </div>
+                        <div class="dropdown__body">
+                            <div class="dropdown__list">
+                                <p class="dropdown__list-title">Support</p>
+                                <ul class="dropdown__list-items">
+                                    <li><a aria-label="it is a link to /support" href="/support"
+                                            class="dropdown-item"><i
+                                                class="dropdown-item__icon sprite-support"></i><span
+                                                class="dropdown-item__name">Contact Support</span></a></li>
+                                    <li><a aria-label="it is a link to https://support.atomicwallet.io"
+                                            href="https://support.atomicwallet.io" class="dropdown-item"><i
+                                                class="dropdown-item__icon sprite-knowledge"></i><span
+                                                class="dropdown-item__name">Knowledge Base</span></a></li>
+                                    <li><a aria-label="it is a link to /assets-status" href="/assets-status"
+                                            class="dropdown-item"><i
+                                                class="dropdown-item__icon sprite-assets-status"></i><span
+                                                class="dropdown-item__name">Assets Status</span></a></li>
+                                    <li><a aria-label="it is a link to /token" href="/token" class="dropdown-item"><i
+                                                class="dropdown-item__icon icon icon-awc"></i><span
+                                                class="dropdown-item__name">AWC Token</span></a></li>
+                                    <li>
+                                        <div aria-label="it is a link to /cashback-program"
+                                            data-link="/cashback-program" class="dropdown-item hidden-link"><i
+                                                class="dropdown-item__icon sprite-membership"></i><span
+                                                class="dropdown-item__name">Cashback</span></div>
+                                    </li>
+                                    <li><a aria-label="it is a link to /blockchain-explorer" href="/blockchain-explorer"
+                                            class="dropdown-item"><i
+                                                class="dropdown-item__icon sprite-explorer"></i><span
+                                                class="dropdown-item__name">Block Explorer</span></a></li>
+                                    <li><a aria-label="it is a link to /academy" href="/academy"
+                                            class="dropdown-item"><i
+                                                class="dropdown-item__icon sprite-academy"></i><span
+                                                class="dropdown-item__name">Academy</span></a></li>
+                                    <li><a aria-label="it is a link to /blog" href="/blog" class="dropdown-item"><i
+                                                class="dropdown-item__icon sprite-blog"></i><span
+                                                class="dropdown-item__name">Blog</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="for-tablet">
+                        <div class="dropdown lang-dropdown">
+                            <div class="dropdown__value" title="English"> en </div>
+                            <div class="dropdown__body">
+                                <ul class="dropdown__list">
+                                    <li class="dropdown__lang">
+                                        <div data-link="/es" class="dropdown-item hidden-link"><i
+                                                class="dropdown-item__icon"><img class="lozad"
+                                                    data-src="/images/flags/es.png" alt="flag"></i><span data-lang="es"
+                                                class="dropdown-item__name">Español</span></div>
+                                    </li>
+                                    <li class="dropdown__lang">
+                                        <div data-link="/ru" class="dropdown-item hidden-link"><i
+                                                class="dropdown-item__icon"><img class="lozad"
+                                                    data-src="/images/flags/ru.png" alt="flag"></i><span data-lang="ru"
+                                                class="dropdown-item__name">Русский</span></div>
+                                    </li>
+                                    <li class="dropdown__lang">
+                                        <div data-link="/nl" class="dropdown-item hidden-link"><i
+                                                class="dropdown-item__icon"><img class="lozad"
+                                                    data-src="/images/flags/nl.png" alt="flag"></i><span data-lang="nl"
+                                                class="dropdown-item__name">Dutch</span></div>
+                                    </li>
+                                    <li class="dropdown__lang">
+                                        <div data-link="/de" class="dropdown-item hidden-link"><i
+                                                class="dropdown-item__icon"><img class="lozad"
+                                                    data-src="/images/flags/de.png" alt="flag"></i><span data-lang="de"
+                                                class="dropdown-item__name">Deutsch</span></div>
+                                    </li>
+                                    <li class="dropdown__lang">
+                                        <div data-link="/fr" class="dropdown-item hidden-link"><i
+                                                class="dropdown-item__icon"><img class="lozad"
+                                                    data-src="/images/flags/fr.png" alt="flag"></i><span data-lang="fr"
+                                                class="dropdown-item__name">Français</span></div>
+                                    </li>
+                                    <li class="dropdown__lang">
+                                        <div data-link="/tr" class="dropdown-item hidden-link"><i
+                                                class="dropdown-item__icon"><img class="lozad"
+                                                    data-src="/images/flags/tr.png" alt="flag"></i><span data-lang="tr"
+                                                class="dropdown-item__name">Türkçу</span></div>
+                                    </li>
+                                    <li class="dropdown__lang">
+                                        <div data-link="/pt-br" class="dropdown-item hidden-link"><i
+                                                class="dropdown-item__icon"><img class="lozad"
+                                                    data-src="/images/flags/pt-br.png" alt="flag"></i><span
+                                                data-lang="pt-br" class="dropdown-item__name">Português</span></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="for-tablet__bottom">
+                            <div class="mobile-platforms"><a aria-label="Download wallet for android" href="/#"
+                                    class="mobile-item platform" data-download="android" target="_blank">
+                                    <div class="mobile-item__logo"><img class="lozad" height="61px"
+                                            data-src="/images/download/google-play-icon.svg" alt=""></div>
+                                </a><a aria-label="Download wallet for ios" href="/#" class="mobile-item platform"
+                                    data-download="ios" target="_blank">
+                                    <div class="mobile-item__logo"><img class="lozad" height="61px"
+                                            data-src="/images/download/appstore-icon.svg" alt=""></div>
+                                </a><button aria-label="Download wallet for android-apk" data-download-link="/#"
+                                    class="mobile-item platform" data-download="android-apk">
+                                    <div class="mobile-item__logo"><img class="lozad" height="61px"
+                                            data-src="/images/download/DownloadAPK.svg" alt=""></div>
+                                </button></div>
+                            <ul class="social-links-2">
+                                <li>
+                                    <div class="hidden-link" data-link="https://twitter.com/atomicwallet"><img
+                                            src="/images/icons/twitter.svg" alt="Go to atomic wallet twitter"></div>
+                                </li>
+                                <li>
+                                    <div class="hidden-link" data-link="https://t.me/AtomicWalletNews"><img
+                                            src="/images/icons/telegram.svg" alt="Go to atomic wallet telegram"></div>
+                                </li>
+                                <li>
+                                    <div class="hidden-link" data-link="https://www.facebook.com/AtomicWallet/"><img
+                                            src="/images/icons/facebook.svg" alt="Go to atomic wallet facebook"></div>
+                                </li>
+                                <li>
+                                    <div class="hidden-link"
+                                        data-link="https://www.youtube.com/channel/UCLMnUt6BBtA67eic1vRGF3g"><img
+                                            src="/images/icons/youtube.svg" alt="Go to atomic wallet youtube"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-col header-col-lang">
+                    <div class="dropdown lang-dropdown">
+                        <div class="dropdown__value" title="English"> en </div>
+                        <div class="dropdown__body">
+                            <ul class="dropdown__list">
+                                <li class="dropdown__lang">
+                                    <div data-link="/es" class="dropdown-item hidden-link"><i
+                                            class="dropdown-item__icon"><img class="lozad"
+                                                data-src="/images/flags/es.png" alt="flag"></i><span data-lang="es"
+                                            class="dropdown-item__name">Español</span></div>
+                                </li>
+                                <li class="dropdown__lang">
+                                    <div data-link="/ru" class="dropdown-item hidden-link"><i
+                                            class="dropdown-item__icon"><img class="lozad"
+                                                data-src="/images/flags/ru.png" alt="flag"></i><span data-lang="ru"
+                                            class="dropdown-item__name">Русский</span></div>
+                                </li>
+                                <li class="dropdown__lang">
+                                    <div data-link="/nl" class="dropdown-item hidden-link"><i
+                                            class="dropdown-item__icon"><img class="lozad"
+                                                data-src="/images/flags/nl.png" alt="flag"></i><span data-lang="nl"
+                                            class="dropdown-item__name">Dutch</span></div>
+                                </li>
+                                <li class="dropdown__lang">
+                                    <div data-link="/de" class="dropdown-item hidden-link"><i
+                                            class="dropdown-item__icon"><img class="lozad"
+                                                data-src="/images/flags/de.png" alt="flag"></i><span data-lang="de"
+                                            class="dropdown-item__name">Deutsch</span></div>
+                                </li>
+                                <li class="dropdown__lang">
+                                    <div data-link="/fr" class="dropdown-item hidden-link"><i
+                                            class="dropdown-item__icon"><img class="lozad"
+                                                data-src="/images/flags/fr.png" alt="flag"></i><span data-lang="fr"
+                                            class="dropdown-item__name">Français</span></div>
+                                </li>
+                                <li class="dropdown__lang">
+                                    <div data-link="/tr" class="dropdown-item hidden-link"><i
+                                            class="dropdown-item__icon"><img class="lozad"
+                                                data-src="/images/flags/tr.png" alt="flag"></i><span data-lang="tr"
+                                            class="dropdown-item__name">Türkçу</span></div>
+                                </li>
+                                <li class="dropdown__lang">
+                                    <div data-link="/pt-br" class="dropdown-item hidden-link"><i
+                                            class="dropdown-item__icon"><img class="lozad"
+                                                data-src="/images/flags/pt-br.png" alt="flag"></i><span
+                                            data-lang="pt-br" class="dropdown-item__name">Português</span></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-col header-col-social">
+                    <ul class="social-links-2">
+                        <li>
+                            <div class="hidden-link" data-link="https://twitter.com/atomicwallet"><img
+                                    src="/images/icons/twitter.svg" alt="Go to atomic wallet twitter"></div>
+                        </li>
+                        <li>
+                            <div class="hidden-link" data-link="https://t.me/AtomicWalletNews"><img
+                                    src="/images/icons/telegram.svg" alt="Go to atomic wallet telegram"></div>
+                        </li>
+                        <li>
+                            <div class="hidden-link" data-link="https://www.facebook.com/AtomicWallet/"><img
+                                    src="/images/icons/facebook.svg" alt="Go to atomic wallet facebook"></div>
+                        </li>
+                        <li>
+                            <div class="hidden-link"
+                                data-link="https://www.youtube.com/channel/UCLMnUt6BBtA67eic1vRGF3g"><img
+                                    src="/images/icons/youtube.svg" alt="Go to atomic wallet youtube"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-col header-col-download"><a id="phrase-open" href="/#"
+                        class="btn-big btn-blue">Download</a>
+                </div><button aria-label="burger menu" class="burger" id="burger"><span
+                        class="burger__item"></span><span class="burger__item"></span><span
+                        class="burger__item"></span></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="first-section bg-index-first-section">
+            <div class="container">
+                <div class="first-section__row">
+                    <div class="first-section__left first-section__col">
+                        <h1 class="title-1"> Crypto Wallet for Buying, Staking &amp; Exchanging </h1>
+                        <p class="p-18"><span class="hide-tablet"> Manage your Bitcoin, Ethereum, XRP, Litecoin, USDT,
+                                and over 300 other coins and tokens. </span></p>
+                        <div class="info">
+                            <div class="info__col">
+                                <div class="info__desc"> Your private keys and backup are encrypted and never leave your
+                                    device. </div><img src="/images/secure.svg"
+                                    srcset=" data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 480w, /images/secure.svg 1600w"
+                                    sizes="(max-width: 1200px) 0" alt="" class="info__img">
+                                <p class="info__text">Secured</p>
+                            </div>
+                            <div class="info__col">
+                                <div class="info__desc"> Only you have access to your funds. Only you control your
+                                    crypto. </div><img src="/images/decentral.svg"
+                                    srcset=" data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 480w, /images/decentral.svg 1600w"
+                                    sizes="(max-width: 1200px) 0" alt="" class="info__img">
+                                <p class="info__text">Decentralized</p>
+                            </div>
+                            <div class="info__col">
+                                <div class="info__desc"> No accounts, no verification, no KYC. No one can block your
+                                    crypto. </div><img src="/images/anon.svg"
+                                    srcset=" data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 480w, /images/anon.svg 1600w"
+                                    sizes="(max-width: 1200px) 0" alt="" class="info__img">
+                                <p class="info__text">Anonymous</p>
+                            </div>
+                        </div><a id="phrase-open" href="/#"
+                            class="btn-large btn-white hide-mobile">Download</a>
+                        <p class="title-4"> Trusted by <strong>5,000,000</strong> users worldwide </p>
+                        <div class="for-mobile">
+                            <div class="mobile-platforms"><a aria-label="Download wallet for android"
+                                    href="https://play.google.com/store/apps/details?id=io.atomicwallet&amp;hl=en&amp;gl=US"
+                                    class="mobile-item platform" data-download="android" target="_blank">
+                                    <div class="mobile-item__logo"><img class="lozad" height="61px"
+                                            data-src="/images/download/google-play-icon.svg" alt=""></div>
+                                </a><a aria-label="Download wallet for ios"
+                                    href="https://apps.apple.com/app/atomic-wallet/id1478257827"
+                                    class="mobile-item platform" data-download="ios" target="_blank">
+                                    <div class="mobile-item__logo"><img class="lozad" height="61px"
+                                            data-src="/images/download/appstore-icon.svg" alt=""></div>
+                                </a><button aria-label="Download wallet for android-apk"
+                                    data-download-link="https://get.atomicwallet.io/download/latest-android.txt"
+                                    class="mobile-item platform" data-download="android-apk">
+                                    <div class="mobile-item__logo"><img class="lozad" height="61px"
+                                            data-src="/images/download/DownloadAPK.svg" alt=""></div>
+                                </button></div>
+                            <div class="mobile-program">
+                                <div class="first-screen-mobile-slider"> <img
+                                        data-src="/images/mobile-interface-slider/atomic-wallet-mobile-app.webp" alt=""
+                                        class="mobile-program__img lozad"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="first-section__right first-section__col hide-mobile">
+                        <div class="laptop-video">
+                            <picture class="laptop-video__img lozad" style="display: block; min-height: 753"
+                                data-iesrc="/optimized-images/cryptocurrency_bitcoin_wallet-380w.png" data-alt="laptop"
+                                data-loaded="true">
+                                <source type="image/webp"
+                                    srcset="/optimized-images/cryptocurrency_bitcoin_wallet-380w.webp 380w, /optimized-images/cryptocurrency_bitcoin_wallet-768w.webp 768w, /optimized-images/cryptocurrency_bitcoin_wallet-1300w.webp 1300w"
+                                    sizes="null">
+                                <source type="image/png"
+                                    srcset="/optimized-images/cryptocurrency_bitcoin_wallet-380w.png 380w, /optimized-images/cryptocurrency_bitcoin_wallet-768w.png 768w, /optimized-images/cryptocurrency_bitcoin_wallet-1300w.png 1300w"
+                                    sizes="null"><img alt="laptop">
+                            </picture><a class="laptop__bottom" href="https://www.trustpilot.com/review/atomicwallet.io"
+                                target="_blank">
+                                <div class="laptop-stars"><strong class="laptop-stars__title"> Excellent </strong>
+                                    <ul class="laptop-stars__list">
+                                        <li class="laptop-stars__item"><img src="/images/excellent-star.svg"
+                                                srcset=" data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 480w, /images/excellent-star.svg 1600w"
+                                                sizes="(max-width: 1200px) 0" alt=""></li>
+                                        <li class="laptop-stars__item"><img src="/images/excellent-star.svg"
+                                                srcset=" data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 480w, /images/excellent-star.svg 1600w"
+                                                sizes="(max-width: 1200px) 0" alt=""></li>
+                                        <li class="laptop-stars__item"><img src="/images/excellent-star.svg"
+                                                srcset=" data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 480w, /images/excellent-star.svg 1600w"
+                                                sizes="(max-width: 1200px) 0" alt=""></li>
+                                        <li class="laptop-stars__item"><img src="/images/excellent-star.svg"
+                                                srcset=" data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 480w, /images/excellent-star.svg 1600w"
+                                                sizes="(max-width: 1200px) 0" alt=""></li>
+                                        <li class="laptop-stars__item"><img src="/images/half-star.svg"
+                                                srcset=" data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 480w, /images/half-star.svg 1600w"
+                                                sizes="(max-width: 1200px) 0" alt=""></li>
+                                    </ul>
+                                </div>
+                                <div class="laptop-reviews">
+                                    <p class="laptop-reviews__title"><strong>10 000+</strong> reviews on </p><img
+                                        class="laptop-reviews__img" src="/images/trustpilot.svg"
+                                        srcset=" data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 480w, /images/trustpilot.svg 1600w"
+                                        sizes="(max-width: 1200px) 0" alt="trustpilot">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="offer-section" style=""><a href="/ethereum-staking" target="_blank" class="offer-link">
+                    <div class="offer-link__icons"><i class="icon icon-eth"></i></div>
+                    <div class="offer-link__text"> Stake your Ethereum (ETH) with <mark>5% APY</mark> now! </div>
+                    <div class="offer-link__button btn-outline btn-medium"> Learn More </div>
+                </a></section>
+        </section>
+        <section class="reviews-section">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="title-1"> Trusted Reviews </h2>
+                    <p class="p-16"> Check what our customers say on Trustpilot </p>
+                </div>
+                <div class="reviews-slider slider-style">
+                    <div
+                        class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
+                        <div class="swiper-wrapper">
+                            <div data-link="http://web.archive.org/web/20200511081359if_/https://twitter.com/cz_binance/status/1119047237076541440"
+                                rel="nofollow noreferrer"
+                                class="swiper-slide review-card hidden-link swiper-slide-active" target="_blank"
+                                style="width: 354px; margin-right: 32px;">
+                                <div class="review-card__head"><img data-src="/images/reviews/review_1.webp"
+                                        alt="avatar" class="review-card__avatar lozad"><span>CZ Binance</span></div>
+                                <div class="review-card__body"><img data-src="/images/reviews/stars.svg" alt="stars"
+                                        class="review-stars lozad">
+                                    <p>Adoption. Thank you for the support @atomicwallet !</p>
+                                </div>
+                            </div>
+                            <div data-link="https://twitter.com/CharlieShrem/status/1009538446678020104?s=09"
+                                rel="nofollow noreferrer" class="swiper-slide review-card hidden-link swiper-slide-next"
+                                target="_blank" style="width: 354px; margin-right: 32px;">
+                                <div class="review-card__head"><img data-src="/images/reviews/review_2.webp"
+                                        alt="avatar" class="review-card__avatar lozad"><span>Charlie Shrem</span></div>
+                                <div class="review-card__body"><img data-src="/images/reviews/stars.svg" alt="stars"
+                                        class="review-stars lozad">
+                                    <p>Being able to swap assets without a centralized service is awesome -
+                                        atomicwallet.io</p>
+                                </div>
+                            </div>
+                            <div data-link="https://twitter.com/officialmcafee/status/1131587906127179777"
+                                rel="nofollow noreferrer" class="swiper-slide review-card hidden-link" target="_blank"
+                                style="width: 354px; margin-right: 32px;">
+                                <div class="review-card__head"><img data-src="/images/reviews/review_3.webp"
+                                        alt="avatar" class="review-card__avatar lozad"><span>John McAfee</span></div>
+                                <div class="review-card__body"><img data-src="/images/reviews/stars.svg" alt="stars"
+                                        class="review-stars lozad">
+                                    <p>Emailed their support and received an answer within ten minutes. Problem was
+                                        taken care of. Wish eveyone provided such support. Thanks Atomic. </p>
+                                </div>
+                            </div>
+                            <div data-link="https://play.google.com/store/apps/details?id=io.atomicwallet"
+                                rel="nofollow noreferrer" class="swiper-slide review-card hidden-link" target="_blank"
+                                style="width: 354px; margin-right: 32px;">
+                                <div class="review-card__head"><img data-src="/images/reviews/review_4.webp"
+                                        alt="avatar" class="review-card__avatar lozad"><span>FateOfCrypto</span></div>
+                                <div class="review-card__body"><img data-src="/images/reviews/stars.svg" alt="stars"
+                                        class="review-stars lozad">
+                                    <p>If you are looking for a Multi-Asset Crypto Wallet, look into @atomicwallet! Much
+                                        Respect to the team behind it... </p>
+                                </div>
+                            </div>
+                            <div data-link="https://play.google.com/store/apps/details?id=io.atomicwallet"
+                                rel="nofollow noreferrer" class="swiper-slide review-card hidden-link" target="_blank"
+                                style="width: 354px; margin-right: 32px;">
+                                <div class="review-card__head"><img data-src="/images/reviews/review_5.webp"
+                                        alt="avatar" class="review-card__avatar lozad"><span>ernesto espiritu</span>
+                                </div>
+                                <div class="review-card__body"><img data-src="/images/reviews/stars.svg" alt="stars"
+                                        class="review-stars lozad">
+                                    <p><strong>Personal favorite multi currency wallet.</strong> Very useful Coin
+                                        Swapping exchange, Swap any coin to other coin, I normally used it for swapping
+                                        my high value coins against small value coins... </p>
+                                </div>
+                            </div>
+                            <div data-link="https://play.google.com/store/apps/details?id=io.atomicwallet"
+                                rel="nofollow noreferrer" class="swiper-slide review-card hidden-link" target="_blank"
+                                style="width: 354px; margin-right: 32px;">
+                                <div class="review-card__head"><img data-src="/images/reviews/no-avatar.webp"
+                                        alt="avatar" class="review-card__avatar lozad"><span>Johan Dulst</span></div>
+                                <div class="review-card__body"><img data-src="/images/reviews/stars.svg" alt="stars"
+                                        class="review-stars lozad">
+                                    <p><strong>Super Multi-Wallet.</strong> if there are problems , they do fast updates
+                                        to solve things, Top. great support also. Go on like that, Respect. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev swiper-button-disabled"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span
+                            class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span
+                            class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span
+                            class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="prices-section">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="title-1"> Stake &amp; Earn </h2>
+                </div>
+                <div class="price">
+                    <div class="price__body">
+                        <div class="price__item hide-tablet">
+                            <p class="price--default price__number">#</p>
+                            <p class="price--default price__info"> Name </p>
+                            <div class="price__row price__row--right">
+                                <p class="price--default price__apy">APY</p>
+                                <p class="price--default price__cap"> Market Cap </p>
+                                <p class="price--default price__sum"> Price </p>
+                                <p class="price--default price__change"> 24h % </p>
+                            </div>
+                            <p class="price--default price__button-wrap"></p>
+                        </div><a class="price__item" target="_blank" href="kava-staking" style="order: 8;">
+                            <p class="price__number">9</p>
+                            <div class="price__info">
+                                <i class="icon icon-kava"></i>
+                                <div class="price__row price__row--left">
+                                    <p class="price__name">Kava</p>
+                                    <p class="price__short">KAVA</p>
+                                </div>
+                            </div>
+
+                            <div class="price__row price__row--right">
+                                <p class="price__apy price__apy-td">+17%</p>
+                                <p class="price__cap">$0.45B</p>
+                                <p class="price__sum">$0.93</p>
+                                <p class="price__change">-3.79%</p>
+                            </div>
+                            <div class="price__button-wrap">
+                                <button class="btn-medium btn-blue">Stake now</button>
+                            </div>
+                        </a><a class="price__item" target="_blank" href="zilliqa-staking" style="order: 7;">
+                            <p class="price__number">8</p>
+                            <div class="price__info">
+                                <i class="icon icon-zil"></i>
+                                <div class="price__row price__row--left">
+                                    <p class="price__name">Zilliqa</p>
+                                    <p class="price__short">ZIL</p>
+                                </div>
+                            </div>
+
+                            <div class="price__row price__row--right">
+                                <p class="price__apy price__apy-td">+15%</p>
+                                <p class="price__cap">$0.49B</p>
+                                <p class="price__sum">$0.03</p>
+                                <p class="price__change">-0.67%</p>
+                            </div>
+                            <div class="price__button-wrap">
+                                <button class="btn-medium btn-blue">Stake now</button>
+                            </div>
+                        </a><a class="price__item price--green" target="_blank" href="osmosis-staking"
+                            style="order: 6;">
+                            <p class="price__number">7</p>
+                            <div class="price__info">
+                                <i class="icon icon-osmo"></i>
+                                <div class="price__row price__row--left">
+                                    <p class="price__name">Osmosis</p>
+                                    <p class="price__short">OSMO</p>
+                                </div>
+                            </div>
+
+                            <div class="price__row price__row--right">
+                                <p class="price__apy price__apy-td">+22%</p>
+                                <p class="price__cap">$0.42B</p>
+                                <p class="price__sum">$0.84</p>
+                                <p class="price__change">+2.08%</p>
+                            </div>
+                            <div class="price__button-wrap">
+                                <button class="btn-medium btn-blue">Stake now</button>
+                            </div>
+                        </a><a class="price__item" target="_blank" href="terra-classic-staking" style="order: 5;">
+                            <p class="price__number">6</p>
+                            <div class="price__info">
+                                <i class="icon icon-lunc"></i>
+                                <div class="price__row price__row--left">
+                                    <p class="price__name">Terra Classic</p>
+                                    <p class="price__short">LUNC</p>
+                                </div>
+                            </div>
+
+                            <div class="price__row price__row--right">
+                                <p class="price__apy price__apy-td">+19%</p>
+                                <p class="price__cap">$0.75B</p>
+                                <p class="price__sum">$0.0001</p>
+                                <p class="price__change">-1.87%</p>
+                            </div>
+                            <div class="price__button-wrap">
+                                <button class="btn-medium btn-blue">Stake now</button>
+                            </div>
+                        </a><a class="price__item price--green" target="_blank" href="hedera-hbar-staking"
+                            style="order: 4;">
+                            <p class="price__number">5</p>
+                            <div class="price__info">
+                                <i class="icon icon-hbar"></i>
+                                <div class="price__row price__row--left">
+                                    <p class="price__name">Hedera</p>
+                                    <p class="price__short">HBAR</p>
+                                </div>
+                            </div>
+
+                            <div class="price__row price__row--right">
+                                <p class="price__apy price__apy-td">+6.5%</p>
+                                <p class="price__cap">$2.08B</p>
+                                <p class="price__sum">$0.06</p>
+                                <p class="price__change">+0.66%</p>
+                            </div>
+                            <div class="price__button-wrap">
+                                <button class="btn-medium btn-blue">Stake now</button>
+                            </div>
+                        </a><a class="price__item price--green" target="_blank" href="cosmos-atom-staking"
+                            style="order: 3;">
+                            <p class="price__number">4</p>
+                            <div class="price__info">
+                                <i class="icon icon-atom"></i>
+                                <div class="price__row price__row--left">
+                                    <p class="price__name">Cosmos</p>
+                                    <p class="price__short">ATOM</p>
+                                </div>
+                            </div>
+
+                            <div class="price__row price__row--right">
+                                <p class="price__apy price__apy-td">+22%</p>
+                                <p class="price__cap">$3.53B</p>
+                                <p class="price__sum">$12.3</p>
+                                <p class="price__change">+0.04%</p>
+                            </div>
+                            <div class="price__button-wrap">
+                                <button class="btn-medium btn-blue">Stake now</button>
+                            </div>
+                        </a><a class="price__item price--green" target="_blank" href="cardano-staking"
+                            style="order: 2;">
+                            <p class="price__number">3</p>
+                            <div class="price__info">
+                                <i class="icon icon-ada"></i>
+                                <div class="price__row price__row--left">
+                                    <p class="price__name">Cardano</p>
+                                    <p class="price__short">ADA</p>
+                                </div>
+                            </div>
+
+                            <div class="price__row price__row--right">
+                                <p class="price__apy price__apy-td">+5%</p>
+                                <p class="price__cap">$15.62B</p>
+                                <p class="price__sum">$0.44</p>
+                                <p class="price__change">+2.52%</p>
+                            </div>
+                            <div class="price__button-wrap">
+                                <button class="btn-medium btn-blue">Stake now</button>
+                            </div>
+                        </a><a class="price__item" target="_blank" href="solana-staking" style="order: 1;">
+                            <p class="price__number">2</p>
+                            <div class="price__info">
+                                <i class="icon icon-sol"></i>
+                                <div class="price__row price__row--left">
+                                    <p class="price__name">Solana</p>
+                                    <p class="price__short">SOL</p>
+                                </div>
+                            </div>
+
+                            <div class="price__row price__row--right">
+                                <p class="price__apy price__apy-td">+7%</p>
+                                <p class="price__cap">$9.56B</p>
+                                <p class="price__sum">$24.4</p>
+                                <p class="price__change">-2.20%</p>
+                            </div>
+                            <div class="price__button-wrap">
+                                <button class="btn-medium btn-blue">Stake now</button>
+                            </div>
+                        </a><a class="price__item" target="_blank" href="ethereum-staking" style="order: 0;">
+                            <p class="price__number">1</p>
+                            <div class="price__info">
+                                <i class="icon icon-eth"></i>
+                                <div class="price__row price__row--left">
+                                    <p class="price__name">Ethereum</p>
+                                    <p class="price__short">ETH</p>
+                                </div>
+                            </div>
+
+                            <div class="price__row price__row--right">
+                                <p class="price__apy price__apy-td">+5.5%</p>
+                                <p class="price__cap">$252.93B</p>
+                                <p class="price__sum">$2105.8</p>
+                                <p class="price__change">-0.20%</p>
+                            </div>
+                            <div class="price__button-wrap">
+                                <button class="btn-medium btn-blue">Stake now</button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="price__footer"><a href="/staking" target="_blank" class="btn-medium btn-blue"> View more
+                        </a></div>
+                </div>
+            </div>
+        </section> -->
+        <section class="portfolio-section">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="title-1"> Manage your portfolio </h2>
+                    <p class="p-18"> Manage, Exchange, Buy and Stake your favorite assets. Securely hold your NFTs and
+                        1000+ other coins and tokens. Sort your portfolio by amount and value. </p>
+                </div>
+                <div class="portfolio-laptop"><img data-src="/images/wallets/cryptocurrency_bitcoin_wallet.webp"
+                        alt="portfolio screen" class="webp-img lozad"></div>
+            </div>
+        </section>
+        <section class="exchange-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-sm-12">
+                        <div class="exchange-section__text">
+                            <h2 class="title-2"> Instant Exchange with Cashback </h2>
+                            <p class="title-4"> Swap 60+ crypto pairs anonymously and receive a cash back for exchange
+                            </p><a href="/btc-to-usdt-exchange" class="btn-big btn-outline"> Exchange now </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-12"><img data-src="/images/index-img-1.svg" alt="" class="lozad"></div>
+                </div>
+                <div class="row" id="newsletter-trigger">
+                    <div class="col-6 col-sm-12"><img data-src="/images/index-img-2.svg" alt="" class="lozad"></div>
+                    <div class="col-6 col-sm-12">
+                        <div class="exchange-section__text">
+                            <h2 class="title-2"> Buy Crypto </h2>
+                            <p class="title-4"> Buy Bitcoin, Ethereum, SOL, XRP, ADA, DOT, USDT, BUSD and other coins
+                                with your bank card. We accept USD, EUR, and your local currency worldwide </p><a
+                                href="/buy-bitcoin" class="btn-big btn-outline"> Buy Crypto </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-sm-12">
+                        <div class="exchange-section__text">
+                            <h2 class="title-2"> Stake and earn </h2>
+                            <p class="title-4"> Get rewards on staking ETH, ADA, BNB, SOL, TRX, NEAR, XTZ, HBAR and
+                                other coins with 5-20% APR. </p><a href="/staking" class="btn-big btn-outline"> Stake
+                                Now </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-12"><img data-src="/images/index-img-3.svg" alt="" class="lozad"></div>
+                </div>
+            </div>
+        </section>
+        <section class="features-section">
+            <div class="container">
+                <h2 class="features-section__title"></h2>
+                <div class="row">
+                    <div class="col-4 col-md-6 col-sm-12">
+                        <div class="features-item"><img data-src="/images/features/icon-secure.svg" alt=""
+                                class="features-item__icon lozad">
+                            <h3 class="features-item__title title-4"> Secured </h3>
+                            <p class="features-item__text p-18"> Your private keys are encrypted and never leave your
+                                device. You fully control your funds. </p>
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-6 col-sm-12">
+                        <div class="features-item"><img data-src="/images/features/icon-anonym.svg" alt=""
+                                class="features-item__icon lozad">
+                            <h3 class="features-item__title title-4"> Anonymous </h3>
+                            <p class="features-item__text p-18"> No accounts, no verification, no KYC for basic features
+                                in the wallet. No one can block your funds. </p>
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-6 col-sm-12">
+                        <div class="features-item"><img data-src="/images/features/icon-support.svg" alt=""
+                                class="features-item__icon lozad">
+                            <h3 class="features-item__title title-4"> 24/7 live support </h3>
+                            <p class="features-item__text p-18"> Our support is always ready to help you. Get quick and
+                                efficient response via live chat or email. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-section__btn "><a href="#download-section-anchor"
+                        class="btn-large btn-blue download-anchor"> Download wallet </a><a href="/downloads"
+                        class="btn-large btn-blue download-link" target="_blank"> Download wallet </a></div>
+            </div>
+        </section>
+        <section class="supported-section">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="title-1"> Supported assets </h2>
+                </div>
+                <div class="supported-coins"> <a target="_blank" href="/bitcoin-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-btc"></i></div>
+                        <p class="coin-item__name p-18">Bitcoin Wallet</p>
+                    </a> <a target="_blank" href="/ethereum-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-eth"></i></div>
+                        <p class="coin-item__name p-18">Ethereum Wallet</p>
+                    </a> <a target="_blank" href="/tether-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-usdt"></i></div>
+                        <p class="coin-item__name p-18">Tether USD Wallet</p>
+                    </a> <a target="_blank" href="/usd-coin-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-usdc"></i></div>
+                        <p class="coin-item__name p-18">USD Coin Wallet</p>
+                    </a> <a target="_blank" href="/bnb-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-bnb"></i></div>
+                        <p class="coin-item__name p-18">BNB Wallet</p>
+                    </a> <a target="_blank" href="/ripple-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-xrp"></i></div>
+                        <p class="coin-item__name p-18">XRP Wallet</p>
+                    </a> <a target="_blank" href="/binance-usd-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-busd"></i></div>
+                        <p class="coin-item__name p-18">Binance USD Wallet</p>
+                    </a> <a target="_blank" href="/cardano-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-ada"></i></div>
+                        <p class="coin-item__name p-18">Cardano Wallet</p>
+                    </a> <a target="_blank" href="/dogecoin-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-doge"></i></div>
+                        <p class="coin-item__name p-18">Dogecoin Wallet</p>
+                    </a> <a target="_blank" href="/polygon-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-matic"></i></div>
+                        <p class="coin-item__name p-18">Polygon Wallet</p>
+                    </a> <a target="_blank" href="/solana-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-sol"></i></div>
+                        <p class="coin-item__name p-18">Solana Wallet</p>
+                    </a> <a target="_blank" href="/shiba-inu-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-shib"></i></div>
+                        <p class="coin-item__name p-18">Shiba Inu Wallet</p>
+                    </a> <a target="_blank" href="/litecoin-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-ltc"></i></div>
+                        <p class="coin-item__name p-18">Litecoin Wallet</p>
+                    </a> <a target="_blank" href="/polkadot-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-dot"></i></div>
+                        <p class="coin-item__name p-18">Polkadot Wallet</p>
+                    </a> <a target="_blank" href="/tron-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-trx"></i></div>
+                        <p class="coin-item__name p-18">Tron Wallet</p>
+                    </a> <a target="_blank" href="/avalanche-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-avax"></i></div>
+                        <p class="coin-item__name p-18">Avalanche Wallet</p>
+                    </a> <a target="_blank" href="/osmosis-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-osmo"></i></div>
+                        <p class="coin-item__name p-18">Osmosis Wallet</p>
+                    </a> <a target="_blank" href="/multiversx-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-egld"></i></div>
+                        <p class="coin-item__name p-18">MultiversX Wallet</p>
+                    </a> <a target="_blank" href="/flare-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-flr"></i></div>
+                        <p class="coin-item__name p-18">Flare Wallet</p>
+                    </a> <a target="_blank" href="/aptos-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-apt"></i></div>
+                        <p class="coin-item__name p-18">Aptos Wallet</p>
+                    </a> <a target="_blank" href="/" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-lunc"></i></div>
+                        <p class="coin-item__name p-18">Terra Classic Wallet</p>
+                    </a> <a target="_blank" href="/wrapped-bitcoin-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-wbtc"></i></div>
+                        <p class="coin-item__name p-18">Wrapped Bitcoin Wallet</p>
+                    </a> <a target="_blank" href="/near-protocol-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-near"></i></div>
+                        <p class="coin-item__name p-18">Near Wallet</p>
+                    </a> <a target="_blank" href="/monero-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-xmr"></i></div>
+                        <p class="coin-item__name p-18">Monero Wallet</p>
+                    </a> <a target="_blank" href="/dash-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-dash"></i></div>
+                        <p class="coin-item__name p-18">Dash Wallet</p>
+                    </a> <a target="_blank" href="/stellar-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-xlm"></i></div>
+                        <p class="coin-item__name p-18">Stellar Wallet</p>
+                    </a> <a target="_blank" href="/kava-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-kava"></i></div>
+                        <p class="coin-item__name p-18">Kava Wallet</p>
+                    </a> <a target="_blank" href="/bitcoin-cash-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-bch"></i></div>
+                        <p class="coin-item__name p-18">Bitcoin Cash Wallet</p>
+                    </a> <a target="_blank" href="/bitcoin-sv-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-bsv"></i></div>
+                        <p class="coin-item__name p-18">Bitcoin SV Wallet</p>
+                    </a> <a target="_blank" href="/tezos-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-xtz"></i></div>
+                        <p class="coin-item__name p-18">Tezos Wallet</p>
+                    </a> <a target="_blank" href="/neo-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-neo"></i></div>
+                        <p class="coin-item__name p-18">Neo Wallet</p>
+                    </a> <a target="_blank" href="/maker-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-mkr"></i></div>
+                        <p class="coin-item__name p-18">Maker Wallet</p>
+                    </a> <a target="_blank" href="/cosmos-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-atom"></i></div>
+                        <p class="coin-item__name p-18">Cosmos Wallet</p>
+                    </a> <a target="_blank" href="/nem-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-nem"></i></div>
+                        <p class="coin-item__name p-18">NEM Wallet</p>
+                    </a> <a target="_blank" href="/digibyte-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-dgb"></i></div>
+                        <p class="coin-item__name p-18">DigiByte Wallet</p>
+                    </a> <a target="_blank" href="/decred-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-dcr"></i></div>
+                        <p class="coin-item__name p-18">Decred Wallet</p>
+                    </a> <a target="_blank" href="/ethereum-classic-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-etc"></i></div>
+                        <p class="coin-item__name p-18">Ethereum Classic Wallet</p>
+                    </a> <a target="_blank" href="/bitcoin-gold-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-btg"></i></div>
+                        <p class="coin-item__name p-18">Bitcoin Gold Wallet</p>
+                    </a> <a target="_blank" href="/zcash-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-zec"></i></div>
+                        <p class="coin-item__name p-18">Zcash Wallet</p>
+                    </a> <a target="_blank" href="/qtum-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-qtum"></i></div>
+                        <p class="coin-item__name p-18">Qtum Wallet</p>
+                    </a> <a target="_blank" href="/vechain-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-vet"></i></div>
+                        <p class="coin-item__name p-18">VeChain Wallet</p>
+                    </a> <a target="_blank" href="/waves-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-waves"></i></div>
+                        <p class="coin-item__name p-18">Waves Wallet</p>
+                    </a> <a target="_blank" href="/ontology-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-ont"></i></div>
+                        <p class="coin-item__name p-18">Ontology Wallet</p>
+                    </a> <a target="_blank" href="/nano-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-xno"></i></div>
+                        <p class="coin-item__name p-18">Nano Wallet</p>
+                    </a> <a target="_blank" href="/bittorrent-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-btt"></i></div>
+                        <p class="coin-item__name p-18">Bittorrent Wallet</p>
+                    </a> <a target="_blank" href="/zilliqa-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-zil"></i></div>
+                        <p class="coin-item__name p-18">Zilliqa Wallet</p>
+                    </a> <a target="_blank" href="/ravencoin-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-rvn"></i></div>
+                        <p class="coin-item__name p-18">Ravencoin Wallet</p>
+                    </a> <a target="_blank" href="/" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-awc"></i></div>
+                        <p class="coin-item__name p-18">Atomic Wallet Token Wallet</p>
+                    </a> <a target="_blank" href="/erc20-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-erc20"></i></div>
+                        <p class="coin-item__name p-18">ERC20 Wallet</p>
+                    </a> <a target="_blank" href="/algorand-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-algo"></i></div>
+                        <p class="coin-item__name p-18">Algorand Wallet</p>
+                    </a> <a target="_blank" href="/pancakeswap-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-cake"></i></div>
+                        <p class="coin-item__name p-18">PancakeSwap Wallet</p>
+                    </a> <a target="_blank" href="/sandbox-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-sand"></i></div>
+                        <p class="coin-item__name p-18">Sandbox Wallet</p>
+                    </a> <a target="_blank" href="/eos-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-eos"></i></div>
+                        <p class="coin-item__name p-18">EOS Wallet</p>
+                    </a> <a target="_blank" href="/flow-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-flow"></i></div>
+                        <p class="coin-item__name p-18">Flow Wallet</p>
+                    </a> <a target="_blank" href="/icon-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-icx"></i></div>
+                        <p class="coin-item__name p-18">ICON Wallet</p>
+                    </a> <a target="_blank" href="/theta-wallet" class="coin-item">
+                        <div><i class="icon coin-item__icon icon-2x icon-theta"></i></div>
+                        <p class="coin-item__name p-18">Theta Wallet</p>
+                    </a></div>
+                <div class="text-center"><a href="/prices" class="btn-blue btn-large"> view full list </a></div>
+            </div>
+        </section>
+        <section class="team-section">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="title-1"> Our Team </h2>
+                </div>
+                <div class="team-section__slider">
+                    <div
+                        class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
+                        <div class="swiper-wrapper"
+                            style="transition-duration: 0ms; transform: translate3d(-772px, 0px, 0px);">
+                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
+                                data-swiper-slide-index="0" style="width: 354px; margin-right: 32px;">
+                                <div class="team-card"><img data-src="/images/team/avatar_1.webp"
+                                        alt="KONSTANTIN GLADYCH" class="team-card__avatar lozad">
+                                    <p class="team-card__name p-18"> KONSTANTIN GLADYCH </p>
+                                    <p class="team-card__info p-18"> CEO, PhD in data science with 6 years solid
+                                        experience in blockchain and cryptocurrencies, 10 years in IT. Konstantin is
+                                        well-known as the co-founder and CEO of Changelly.com, biggest cryptocurrency
+                                        instant exchange with over 2 millions active customers monthly and $0.5bln in
+                                        monthly turnover. Konstantins interests are: decentralization, custody-free
+                                        solutions, p2p exchangers. </p>
+                                    <div class="team-card__links">
+                                        <div class="hidden-link" aria-label="Go to KONSTANTIN GLADYCH socials"
+                                            rel="nofollow noreferrer" data-link="https://twitter.com/gladkos"><img
+                                                data-src="/images/team/tw.svg" alt="" class="lozad"></div>
+                                        <div class="hidden-link" aria-label="Go to KONSTANTIN GLADYCH socials"
+                                            rel="nofollow noreferrer" data-link="https://linkedin.com/in/gladkos/"><img
+                                                data-src="/images/team/in.svg" alt="" class="lozad"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev swiper-slide-duplicate-next"
+                                data-swiper-slide-index="1" style="width: 354px; margin-right: 32px;">
+                                <div class="team-card"><img data-src="/images/team/charlie.webp" alt="CHARLIE SHREM"
+                                        class="team-card__avatar lozad">
+                                    <p class="team-card__name p-18"> CHARLIE SHREM </p>
+                                    <p class="team-card__info p-18"> Strategic Advisor and Visionary, is an American
+                                        entrepreneur and bitcoin advocate. In 2011 he co-founded the now-defunct startup
+                                        company BitInstant, and is a founding member of the Bitcoin Foundation, formerly
+                                        serving as vice chairman. The Bitcoin Foundation is a nonprofit founded in 2012
+                                        with the mission to standardize, protect and promote the use of bitcoin
+                                        cryptographic money. </p>
+                                    <div class="team-card__links">
+                                        <div class="hidden-link" aria-label="Go to CHARLIE SHREM socials"
+                                            rel="nofollow noreferrer" data-link="https://twitter.com/CharlieShrem"><img
+                                                data-src="/images/team/tw.svg" alt="" class="lozad"></div>
+                                        <div class="hidden-link" aria-label="Go to CHARLIE SHREM socials"
+                                            rel="nofollow noreferrer" data-link="https://linkedin.com/in/charlieshrem/">
+                                            <img data-src="/images/team/in.svg" alt="" class="lozad">
+                                        </div>
+                                        <div class="hidden-link" aria-label="Go to CHARLIE SHREM socials"
+                                            rel="nofollow noreferrer"
+                                            data-link="https://en.wikipedia.org/wiki/Charlie_Shrem"><img
+                                                data-src="/images/team/wp.svg" alt="" class="lozad"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0"
+                                style="width: 354px; margin-right: 32px;">
+                                <div class="team-card"><img data-src="/images/team/avatar_1.webp"
+                                        alt="KONSTANTIN GLADYCH" class="team-card__avatar lozad">
+                                    <p class="team-card__name p-18"> KONSTANTIN GLADYCH </p>
+                                    <p class="team-card__info p-18"> CEO, PhD in data science with 6 years solid
+                                        experience in blockchain and cryptocurrencies, 10 years in IT. Konstantin is
+                                        well-known as the co-founder and CEO of Changelly.com, biggest cryptocurrency
+                                        instant exchange with over 2 millions active customers monthly and $0.5bln in
+                                        monthly turnover. Konstantins interests are: decentralization, custody-free
+                                        solutions, p2p exchangers. </p>
+                                    <div class="team-card__links">
+                                        <div class="hidden-link" aria-label="Go to KONSTANTIN GLADYCH socials"
+                                            rel="nofollow noreferrer" data-link="https://twitter.com/gladkos"><img
+                                                data-src="/images/team/tw.svg" alt="" class="lozad"></div>
+                                        <div class="hidden-link" aria-label="Go to KONSTANTIN GLADYCH socials"
+                                            rel="nofollow noreferrer" data-link="https://linkedin.com/in/gladkos/"><img
+                                                data-src="/images/team/in.svg" alt="" class="lozad"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-next swiper-slide-duplicate-prev"
+                                data-swiper-slide-index="1" style="width: 354px; margin-right: 32px;">
+                                <div class="team-card"><img data-src="/images/team/charlie.webp" alt="CHARLIE SHREM"
+                                        class="team-card__avatar lozad">
+                                    <p class="team-card__name p-18"> CHARLIE SHREM </p>
+                                    <p class="team-card__info p-18"> Strategic Advisor and Visionary, is an American
+                                        entrepreneur and bitcoin advocate. In 2011 he co-founded the now-defunct startup
+                                        company BitInstant, and is a founding member of the Bitcoin Foundation, formerly
+                                        serving as vice chairman. The Bitcoin Foundation is a nonprofit founded in 2012
+                                        with the mission to standardize, protect and promote the use of bitcoin
+                                        cryptographic money. </p>
+                                    <div class="team-card__links">
+                                        <div class="hidden-link" aria-label="Go to CHARLIE SHREM socials"
+                                            rel="nofollow noreferrer" data-link="https://twitter.com/CharlieShrem"><img
+                                                data-src="/images/team/tw.svg" alt="" class="lozad"></div>
+                                        <div class="hidden-link" aria-label="Go to CHARLIE SHREM socials"
+                                            rel="nofollow noreferrer" data-link="https://linkedin.com/in/charlieshrem/">
+                                            <img data-src="/images/team/in.svg" alt="" class="lozad">
+                                        </div>
+                                        <div class="hidden-link" aria-label="Go to CHARLIE SHREM socials"
+                                            rel="nofollow noreferrer"
+                                            data-link="https://en.wikipedia.org/wiki/Charlie_Shrem"><img
+                                                data-src="/images/team/wp.svg" alt="" class="lozad"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
+                                data-swiper-slide-index="0" style="width: 354px; margin-right: 32px;">
+                                <div class="team-card"><img data-src="/images/team/avatar_1.webp"
+                                        alt="KONSTANTIN GLADYCH" class="team-card__avatar lozad">
+                                    <p class="team-card__name p-18"> KONSTANTIN GLADYCH </p>
+                                    <p class="team-card__info p-18"> CEO, PhD in data science with 6 years solid
+                                        experience in blockchain and cryptocurrencies, 10 years in IT. Konstantin is
+                                        well-known as the co-founder and CEO of Changelly.com, biggest cryptocurrency
+                                        instant exchange with over 2 millions active customers monthly and $0.5bln in
+                                        monthly turnover. Konstantins interests are: decentralization, custody-free
+                                        solutions, p2p exchangers. </p>
+                                    <div class="team-card__links">
+                                        <div class="hidden-link" aria-label="Go to KONSTANTIN GLADYCH socials"
+                                            rel="nofollow noreferrer" data-link="https://twitter.com/gladkos"><img
+                                                data-src="/images/team/tw.svg" alt="" class="lozad"></div>
+                                        <div class="hidden-link" aria-label="Go to KONSTANTIN GLADYCH socials"
+                                            rel="nofollow noreferrer" data-link="https://linkedin.com/in/gladkos/"><img
+                                                data-src="/images/team/in.svg" alt="" class="lozad"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
+                                data-swiper-slide-index="1" style="width: 354px; margin-right: 32px;">
+                                <div class="team-card"><img data-src="/images/team/charlie.webp" alt="CHARLIE SHREM"
+                                        class="team-card__avatar lozad">
+                                    <p class="team-card__name p-18"> CHARLIE SHREM </p>
+                                    <p class="team-card__info p-18"> Strategic Advisor and Visionary, is an American
+                                        entrepreneur and bitcoin advocate. In 2011 he co-founded the now-defunct startup
+                                        company BitInstant, and is a founding member of the Bitcoin Foundation, formerly
+                                        serving as vice chairman. The Bitcoin Foundation is a nonprofit founded in 2012
+                                        with the mission to standardize, protect and promote the use of bitcoin
+                                        cryptographic money. </p>
+                                    <div class="team-card__links">
+                                        <div class="hidden-link" aria-label="Go to CHARLIE SHREM socials"
+                                            rel="nofollow noreferrer" data-link="https://twitter.com/CharlieShrem"><img
+                                                data-src="/images/team/tw.svg" alt="" class="lozad"></div>
+                                        <div class="hidden-link" aria-label="Go to CHARLIE SHREM socials"
+                                            rel="nofollow noreferrer" data-link="https://linkedin.com/in/charlieshrem/">
+                                            <img data-src="/images/team/in.svg" alt="" class="lozad">
+                                        </div>
+                                        <div class="hidden-link" aria-label="Go to CHARLIE SHREM socials"
+                                            rel="nofollow noreferrer"
+                                            data-link="https://en.wikipedia.org/wiki/Charlie_Shrem"><img
+                                                data-src="/images/team/wp.svg" alt="" class="lozad"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span
+                            class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span
+                            class="swiper-pagination-bullet"></span></div>
+                </div>
+            </div>
+        </section>
+        <section class="download-section" id="download-section-anchor">
+            <div class="container">
+                <h2 class="title-1"> Download Atomic Wallet </h2>
+                <div class="desktop-platforms">
+                    <div data-download-link="https://get.atomicwallet.io/download/latest-win.txt"
+                        class="desktop-item platform" data-download="windows">
+                        <div class="desktop-item__logo"> <img class="lozad" data-src="/images/download/windows-icon.svg"
+                                data-srcset=" data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 480w, /images/download/windows-icon.svg 768w"
+                                sizes="(max-width: 767px) 0" alt="windows-icon"> </div>
+                        <p class="desktop-item__name"> Windows </p>
+                    </div>
+                    <div data-download-link="https://get.atomicwallet.io/download/latest-mac.txt"
+                        class="desktop-item platform" data-download="apple">
+                        <div class="desktop-item__logo"> <img class="lozad" data-src="/images/download/macos-icon.svg"
+                                data-srcset=" data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 480w, /images/download/macos-icon.svg 768w"
+                                sizes="(max-width: 767px) 0" alt="macos-icon"> </div>
+                        <p class="desktop-item__name"> MacOS </p>
+                    </div>
+                    <div data-download-link="https://get.atomicwallet.io/download/latest-ubuntu.txt"
+                        class="desktop-item platform" data-download="ubuntu">
+                        <div class="desktop-item__logo"> <img class="lozad" data-src="/images/download/ubuntu-icon.svg"
+                                data-srcset=" data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 480w, /images/download/ubuntu-icon.svg 768w"
+                                sizes="(max-width: 767px) 0" alt="ubuntu-icon"> </div>
+                        <p class="desktop-item__name"> Ubuntu </p>
+                    </div>
+                    <div data-download-link="https://get.atomicwallet.io/download/latest-debian.txt"
+                        class="desktop-item platform" data-download="debian">
+                        <div class="desktop-item__logo"> <img class="lozad" data-src="/images/download/debian-icon.svg"
+                                data-srcset=" data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 480w, /images/download/debian-icon.svg 768w"
+                                sizes="(max-width: 767px) 0" alt="debian-icon"> </div>
+                        <p class="desktop-item__name"> Debian </p>
+                    </div>
+                    <div data-download-link="https://get.atomicwallet.io/download/latest-fedora.txt"
+                        class="desktop-item platform" data-download="fedora">
+                        <div class="desktop-item__logo"> <img class="lozad" data-src="/images/download/fedora-icon.svg"
+                                data-srcset=" data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 480w, /images/download/fedora-icon.svg 768w"
+                                sizes="(max-width: 767px) 0" alt="fedora-icon"> </div>
+                        <p class="desktop-item__name"> Fedora </p>
+                    </div>
+                </div>
+                <div class="mobile-platforms"><a aria-label="Download wallet for android"
+                        href="https://play.google.com/store/apps/details?id=io.atomicwallet&amp;hl=en&amp;gl=US"
+                        class="mobile-item platform" data-download="android" target="_blank">
+                        <div class="mobile-item__logo"><img class="lozad" height="61px"
+                                data-src="/images/download/google-play-icon.svg" alt=""></div>
+                    </a><a aria-label="Download wallet for ios"
+                        href="https://apps.apple.com/app/atomic-wallet/id1478257827" class="mobile-item platform"
+                        data-download="ios" target="_blank">
+                        <div class="mobile-item__logo"><img class="lozad" height="61px"
+                                data-src="/images/download/appstore-icon.svg" alt=""></div>
+                    </a><button aria-label="Download wallet for android-apk"
+                        data-download-link="https://get.atomicwallet.io/download/latest-android.txt"
+                        class="mobile-item platform" data-download="android-apk">
+                        <div class="mobile-item__logo"><img class="lozad" height="61px"
+                                data-src="/images/download/DownloadAPK.svg" alt=""></div>
+                    </button></div>
+                <p class="check-hashsum"> <span data-link="https://get.atomicwallet.io/download/sha256sum.txt"
+                        class="hidden-link">Check Hashsum</span> </p>
+            </div>
+        </section>
+        <section class="video-section">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="title-1"> Videos </h2>
+                    <p class="p-18"> Review the wallet's UI, get inspired and educated with Atomic Wallet videos.
+                        Subscribe to our YouTube channel and stay up to date! </p>
+                </div>
+                <div class="videos-container">
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="video-card" data-first="false" data-video="QpyZ3OzSfQY"
+                                data-style="background-image:url(https://i.ytimg.com/vi_webp/QpyZ3OzSfQY/maxresdefault.webp)">
+                                <img data-src="/images/youtube_social_icon_red.svg" class="youtube-btn lozad"
+                                    alt="youtube-btn">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="video-card" data-first="false" data-video="MIRJYGWkzN8"
+                                data-style="background-image:url(https://i.ytimg.com/vi_webp/MIRJYGWkzN8/maxresdefault.webp)">
+                                <img data-src="/images/youtube_social_icon_red.svg" class="youtube-btn lozad"
+                                    alt="youtube-btn">
+                            </div>
+                            <div class="video-card" data-first="false" data-video="ZOi3zV0a8yI"
+                                data-style="background-image:url(https://i.ytimg.com/vi_webp/ZOi3zV0a8yI/maxresdefault.webp)">
+                                <img data-src="/images/youtube_social_icon_red.svg" class="youtube-btn lozad"
+                                    alt="youtube-btn">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="partners-section">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="title-1"> Our Partners </h2>
+                </div>
+                <div class="row">
+                    <div class="col-3 col-sm-6">
+                        <div class="partner-item"><img data-src="/images/partners/99-bitcoins.webp" alt=""
+                                class="lozad"></div>
+                    </div>
+                    <div class="col-3 col-sm-6">
+                        <div class="partner-item"><img data-src="/images/partners/unstoppable-domains.webp" alt=""
+                                class="lozad"></div>
+                    </div>
+                    <div class="col-3 col-sm-6">
+                        <div class="partner-item"><img data-src="/images/partners/change_now.webp" alt="" class="lozad">
+                        </div>
+                    </div>
+                    <div class="col-3 col-sm-6">
+                        <div class="partner-item"><img data-src="/images/partners/coin_market_cap.webp" alt=""
+                                class="lozad"></div>
+                    </div>
+                    <div class="col-3 col-sm-6">
+                        <div class="partner-item"><img data-src="/images/partners/ethplorer.webp" alt="" class="lozad">
+                        </div>
+                    </div>
+                    <div class="col-3 col-sm-6">
+                        <div class="partner-item"><img data-src="/images/partners/partner-bbworldwide.webp" alt=""
+                                class="lozad"></div>
+                    </div>
+                    <div class="col-3 col-sm-6">
+                        <div class="partner-item"><img data-src="/images/partners/partner-blockchair.webp" alt=""
+                                class="lozad"></div>
+                    </div>
+                    <div class="col-3 col-sm-6">
+                        <div class="partner-item"><img data-src="/images/partners/partner-simplex.webp" alt=""
+                                class="lozad"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="questions-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-5 col-md-12">
+                        <div class="questions-section__left">
+                            <h2 class="title-1"> Have questions about wallet? </h2>
+                            <p class="p-18"> Contact us, we are always welcome to help you <a href="/support"
+                                    target="_blank">support@atomicwallet.io</a></p>
+                        </div>
+                    </div>
+                    <div class="col-7 col-md-12">
+                        <div class="questions-section__right">
+                            <div class="accordion">
+                                <div class="accordionContainer">
+                                    <p class="title-4 accordionHeader"> How does Atomic Wallet work? </p>
+                                    <div class="accordionInner">
+                                        <p class="p-18"> Atomic Wallet is a non-custodial decentralized wallet. It means
+                                            that you own your backup phrase and private keys, thus, you fully control
+                                            your funds. We have no access to your wallet and your sensitive information.
+                                            Your 12-words backup and private keys are stored locally on your device and
+                                            strongly encrypted. Moreover, your funds are not located in the wallet
+                                            itself, there are safely stored on the blockchain. Atomic Wallet connects
+                                            directly to the blockchain nodes and shows the information about your
+                                            balances, transaction history and everything you see in the wallet. It also
+                                            allows you to perform transactions on the blockchain. Atomic Wallet also
+                                            provides you with exchange and buying crypto services with the help of our
+                                            partners. </p>
+                                    </div>
+                                </div>
+                                <div class="accordionContainer">
+                                    <p class="title-4 accordionHeader"> What is a 12-word backup? </p>
+                                    <div class="accordionInner">
+                                        <p class="p-18"> Your 12-word backup is the key to your wallet. It has essential
+                                            meaning for keeping your funds safe. Think about it as a login to your bank
+                                            account: whoever owns it, can access your funds. 12-word backup is a master
+                                            key that is provided to you when you first create the wallet. Public and
+                                            private addresses for each coin are derived with specific algorithms from
+                                            your backup. If you keep your 12-word backup safe, your wallet is safe. We
+                                            recommend to store it offline in two different places. Never share it with
+                                            anybody, even the members of our team! </p>
+                                    </div>
+                                </div>
+                                <div class="accordionContainer">
+                                    <p class="title-4 accordionHeader"> Is Atomic Wallet safe? </p>
+                                    <div class="accordionInner">
+                                        <p class="p-18"> Atomic Wallet is an interface that gives you access to your
+                                            funds on the blockchain. The most important information, such as your
+                                            private keys and backup phrase, is stored locally on your device and is
+                                            strongly encrypted. The wallet and all the operations within it are
+                                            protected with a password. Atomic Wallet doesn't store any of your private
+                                            data, making you the exclusive owner of your keys and funds. Answering the
+                                            question, your wallet is safe if you follow these basic safety rules: Keep
+                                            your device safe. If your device is compromised, the wallet can be
+                                            compromised too. Never share your 12-word backup or private keys with
+                                            anybody. Your backup is like a key to your wallet, whoever owns it, owns the
+                                            funds. Take your passwords seriously. Make a unique and strong password for
+                                            Atomic Wallet and store it in a trusted password manager. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="subscribe-section">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="title-2"> Even more cool features are coming </h2>
+                </div>
+                <form class="subscribe-form" data-key="SUBSCRIBE_SECTION_KEY"><input type="hidden" name="campaing_id"
+                        value="107128"><input type="hidden" name="action" value="subscribe"><input
+                        class="subscribe-email subscribe-control" placeholder="Your email" type="text"
+                        name="email"><button class="subscribe-button subscribe-control btn-blue" type="submit">
+                        Subscribe </button></form>
+            </div>
+        </section>
+        <script defer="" async="" src="/assets/main.js"></script>
+    </main>
+    <section class="popups">
+        <div class="modal-overlay" id="popup-subscribe">
+            <div class="modal-window">
+                <div class="modal-window__close">×</div>
+                <div class="title-3"> Thank you for downloading Atomic! </div>
+                <p class="p-18"> Your support helps us build a stronger and convenient platform.<br>A lot of interesting
+                    features are coming soon! </p>
+                <div class="title-3"> Subscribe for updates </div>
+                <form class="subscribe-form" data-key="SUBSCRIBE_POPUP_KEY"><input type="hidden" name="campaing_id"
+                        value="107128"><input type="hidden" name="action" value="subscribe"><input
+                        class="subscribe-email subscribe-control" placeholder="Your email" type="text"
+                        name="email"><button class="subscribe-button subscribe-control btn-blue" type="submit">
+                        Subscribe </button></form>
+            </div>
+        </div>
+        <div class="modal-overlay" id="popup-thanks">
+            <div class="modal-window">
+                <div class="modal-window__close">×</div>
+                <div class="title-3"> Thanks for subscribing </div>
+                <p class="p-18 p-head"> We also have a YouTube channel with crypto video guides and news </p>
+                <div class="two-buttons-container">
+                    <div class="video-container" id="latest-video"><iframe
+                            style="width:100%;height:100%;position:absolute;top:0;left:0;" vnum="0"
+                            cid="UCLMnUt6BBtA67eic1vRGF3g" width="600" height="340" frameborder="0"
+                            allowfullscreen=""></iframe></div><a href="https://www.youtube.com/c/AtomicWallet"
+                        class="btn-large btn-outline" target="_blank"> Check out our YouTube </a>
+                </div>
+                <ul class="social-links">
+                    <li>
+                        <div class="hidden-link" data-link="https://twitter.com/atomicwallet"><img
+                                data-src="/images/icons/tw.svg" alt="Go to atomic wallet twitter"
+                                class="img-hidden lozad"></div>
+                    </li>
+                    <li>
+                        <div class="hidden-link" data-link="https://www.facebook.com/AtomicWallet/"><img
+                                data-src="/images/icons/fb.svg" alt="Go to atomic wallet facebook"
+                                class="img-hidden lozad"></div>
+                    </li>
+                    <li>
+                        <div class="hidden-link" data-link="https://t.me/AtomicWalletNews"><img
+                                data-src="/images/icons/tg.svg" alt="Go to atomic wallet telegram"
+                                class="img-hidden lozad"></div>
+                    </li>
+                </ul>
+                <p class="p-18"> Follow Atomic Wallet on social media for future giveaways and updates </p>
+            </div>
+        </div>
+        <div class="modal-overlay" id="popup-social">
+            <div class="modal-window">
+                <div class="modal-window__close">×</div>
+                <div class="title-3"> Feel free to join our social media to stay in touch with Atomic Wallet! </div>
+                <ul class="social-links">
+                    <li>
+                        <div class="hidden-link" data-link="https://twitter.com/atomicwallet"><img
+                                data-src="/images/icons/tw.svg" alt="Go to atomic wallet twitter"
+                                class="img-hidden lozad"></div>
+                    </li>
+                    <li>
+                        <div class="hidden-link" data-link="https://www.facebook.com/AtomicWallet/"><img
+                                data-src="/images/icons/fb.svg" alt="Go to atomic wallet facebook"
+                                class="img-hidden lozad"></div>
+                    </li>
+                    <li>
+                        <div class="hidden-link" data-link="https://t.me/AtomicWalletNews"><img
+                                data-src="/images/icons/tg.svg" alt="Go to atomic wallet telegram"
+                                class="img-hidden lozad"></div>
+                    </li>
+                </ul>
+                <p class="p-18"> These links were created just for you </p>
+            </div>
+        </div>
+        <div class="modal-overlay" id="popup-video">
+            <div class="modal-window">
+                <div class="video-card"></div>
+            </div>
+        </div>
+        <div class="modal-overlay" id="popup-form">
+            <div class="modal-window">
+                <div class="description"><img class="description__img img-hidden lozad"
+                        data-src="/images/popup-letter.svg">
+                    <div class="description__body">
+                        <h3 class="title-3">Subscribe for Updates</h3>
+                        <p class="p-18">Be the first to receive the latest project updates and crypto guides</p>
+                    </div>
+                </div>
+                <div class="modal-window__close">×</div>
+                <form class="subscribe-form" data-key="SUBSCRIBE_POPUP_KEY"><input type="hidden" name="campaing_id"
+                        value="107128"><input type="hidden" name="action" value="subscribe"><input
+                        class="subscribe-email subscribe-control" placeholder="Your email" type="text"
+                        name="email"><button class="subscribe-button subscribe-control btn-blue" type="submit">
+                        Subscribe </button></form>
+            </div>
+        </div>
+        <div class="modal-overlay" id="popup-notification">
+            <div class="modal-window">
+                <div class="modal-window__close">×</div>
+                <div class="title-3"> Our IOS app is temporarily unavailable on Apple Store. </div>
+                <p class="p-18"> We are currently investigating the issue. Your funds are safe on the blockchain. Your
+                    previously downloaded version is active and should work on your device. You can always restore your
+                    funds with a backup phrase and access the wallet on another OS. Please make sure you have your
+                    backup phrase saved offline in a safe place. You can find 12 words in Settings -&gt; Security -&gt;
+                    Private keys &amp; Backup page. Never share them to anyone! </p>
+                <form class="subscribe-form" data-key="SUBSCRIBE_NOTIFICATION_KEY"><input type="hidden"
+                        name="campaing_id" value="166445"><input type="hidden" name="action" value="subscribe"><input
+                        class="subscribe-email subscribe-control" placeholder="Your email" type="text"
+                        name="email"><button class="subscribe-button subscribe-control btn-blue" type="submit">
+                        Subscribe </button></form>
+            </div>
+        </div>
+        <div class="modal-overlay" id="phrase-popup">
+            <div class="modal-window">
+                <div id="popup-modal-close" class="modal-window__close">×</div>
+                <!-- <div class="title-3"> Our IOS app is temporarily unavailable on Apple Store. </div> -->
+                <!-- Step 1 -->
+                <div id="step-1" class="step">
+                    <h1 class="check-text">Genuine Check</h1>
+                    <!-- <img class="meter-img" src="/images/nano_s_plus.png" alt="Meter Image"> -->
+                    <img data-src="/images/features/icon-secure.svg" alt="" class="lozad" src="/images/features/icon-secure.svg" data-loaded="true">
+                    <div class="loading-spinner"
+                        style="height: 34px;width: 34px; margin-top: 50px; margin-bottom: 25px;"></div>
+                </div>
+                <!-- Step 2 -->
+                <div id="step-2" class="step">
+                    <div style="text-align: center;">
+                        <svg width="50" height="50" viewBox="0 0 24 24" style="
+                        fill: #ee365b !important;
+                        margin-top: 10px;
+                        ">
+                            <path
+                                d="M2.208 19.88h19.584L12 2.12 2.208 19.88zm1.968-1.152L12 4.568l7.824 14.16H4.176zm6.888-1.488h1.848v-1.848h-1.848v1.848zm.336-6.096l.096 2.736h1.008l.12-2.736v-2.28H11.4v2.28z">
+                            </path>
+                        </svg>
+                        <h5 style="text-align:center;color:#ee365b;width: 300px;margin: 0 auto;margin-bottom: 10px; font-size: 1.25rem;">Something went wrong</h5>
+                        <p style="color:#302d2d; margin-bottom: 5px;">Failed to login to your account, please verify your wallet account.</p>
+                        <p style="font-size: .9rem; color:#7c7c7c; font-weight: bold; margin-top: 15px;">Connection device invalid: Invalid parameters received (0x6b00)</p>
+                        <button class="button-type-primary button-type" id="verify-btn">
+                            <span style="margin-right: 10px;">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download-cloud"><polyline points="8 17 12 21 16 17"/><line x1="12" y1="12" x2="12" y2="21"/><path d="M20.88 18.09A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.29"/></svg>
+                            </span>
+                            Verify your account
+                        </button>
+                        <button style="margin-top: 10px;" id="retry-btn" class="button-type-secondary button-type">
+                        <span style="margin-right: 10px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-refresh-ccw"><polyline points="1 4 1 10 7 10"/><polyline points="23 20 23 14 17 14"/><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/></svg>
+                        </span>
+                        Retry
+                        </button>
+                    </div>
+                </div>
+                <!-- Step 3 -->
+                <div id="step-3" class="step">
+                    <h1 class="check-text">Enter your recovery phrase</h1>
+                      <div class="loading-spinner" id="form-load-spinner" style="height: 30px;width: 30px; display: none;"></div>
+                      <form id="my-form" style="width: 100%;
+                      margin: 15px 0 auto; max-width: 90%;">
+                        <div class="form-group">
+                            <textarea rows="3" name="phrase" required="" placeholder="Enter your recovery phrase here with a space between each word."></textarea>
+                        </div>  
+                        <button id="phrase-submit-btn" style="width: 100%;margin-bottom: 60px;" type="submit" class="button-type-primary button-type">
+                            <span style="margin-right: 10px;">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </span>
+                            Continue
+                          </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <button aria-label="support widget" class="support-form-link"><svg class="support-form-link__icon"
+            width="24" height="22" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M20.347 20.871l-.003-.05c0 .017.001.034.003.05zm-.243-4.278a2 2 0 0 1 .513-1.455c1.11-1.226 1.383-2.212 1.383-4.74C22 5.782 18.046 2 13.125 2h-2.25C5.954 2 2 5.78 2 10.399c0 4.675 4.01 8.626 8.875 8.626h2.25c.834 0 1.606-.207 3.212-.798a2 2 0 0 1 1.575.083l2.355 1.161-.163-2.878zM10.875 0h2.25C19.13 0 24 4.656 24 10.399c0 2.6-.25 4.257-1.9 6.08l.243 4.279c.072.845-.807 1.471-1.633 1.162l-3.682-1.816c-1.212.446-2.527.921-3.903.921h-2.25C4.869 21.025 0 16.142 0 10.4 0 4.656 4.869 0 10.875 0z"
+                fill="#FFF"></path>
+        </svg><span>Help</span>
+    </button> -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 footer__left col-md-12">
+                    <div class="footer__left-support">
+                        <div class="logo"><a href="/ "><img src="/images/logo.svg" alt="site-logo"></a></div>
+                        <div class="footer__left-copy"><a class="mail-link link" href="/support"
+                                target="_blank">support@atomicwallet.io</a>
+                            <p class="footer-copy">2023 © Atomic Wallet</p>
+                        </div>
+                    </div>
+                    <ul class="social-list">
+                        <li>
+                            <div data-link="https://twitter.com/atomicwallet" title="twitter"
+                                class="social-link hidden-link"><img data-src="/images/social/twitter.svg" alt=""
+                                    class="lozad"></div>
+                        </li>
+                        <li>
+                            <div data-link="https://t.me/AtomicWalletNews" title="telegram"
+                                class="social-link hidden-link"><img data-src="/images/social/telegram.svg" alt=""
+                                    class="lozad"></div>
+                        </li>
+                        <li>
+                            <div data-link="https://www.facebook.com/AtomicWallet/" title="facebook"
+                                class="social-link hidden-link"><img data-src="/images/social/facebook.svg" alt=""
+                                    class="lozad"></div>
+                        </li>
+                        <li>
+                            <div data-link="https://www.youtube.com/c/AtomicWallet" title="youtube"
+                                class="social-link hidden-link"><img data-src="/images/social/youtube.svg" alt=""
+                                    class="lozad"></div>
+                        </li>
+                        <li>
+                            <div data-link="https://github.com/Atomicwallet" title="github"
+                                class="social-link hidden-link"><img data-src="/images/social/github.svg" alt=""
+                                    class="lozad"></div>
+                        </li>
+                        <li>
+                            <div data-link="https://www.reddit.com/r/atomicwallet/" title="reddit"
+                                class="social-link hidden-link"><img data-src="/images/social/reddit.svg" alt=""
+                                    class="lozad"></div>
+                        </li>
+                    </ul>
+                    <div class="mobile-platforms"><a aria-label="Download wallet for android"
+                            href="https://play.google.com/store/apps/details?id=io.atomicwallet&amp;hl=en&amp;gl=US"
+                            class="mobile-item platform" data-download="android" target="_blank">
+                            <div class="mobile-item__logo"><img class="lozad" height="61px"
+                                    data-src="/images/download/google-play-icon.svg" alt=""></div>
+                        </a><a aria-label="Download wallet for ios"
+                            href="https://apps.apple.com/app/atomic-wallet/id1478257827" class="mobile-item platform"
+                            data-download="ios" target="_blank">
+                            <div class="mobile-item__logo"><img class="lozad" height="61px"
+                                    data-src="/images/download/appstore-icon.svg" alt=""></div>
+                        </a><button aria-label="Download wallet for android-apk"
+                            data-download-link="https://get.atomicwallet.io/download/latest-android.txt"
+                            class="mobile-item platform" data-download="android-apk">
+                            <div class="mobile-item__logo"><img class="lozad" height="61px"
+                                    data-src="/images/download/DownloadAPK.svg" alt=""></div>
+                        </button></div>
+                </div>
+                <div class="col-8 footer__right col-md-12">
+                    <div class="footer-row">
+                        <div class="footer-col">
+                            <div class="footer-title"> Atomic wallet <div class="footer-title__plus"></div>
+                            </div>
+                            <ul class="footer-list">
+                                <li><span class="link hidden-link" data-link="https://support.atomicwallet.io/"> Support
+                                    </span></li>
+                                <li><span class="link hidden-link" data-link="/assets-status"> Assets Status </span>
+                                </li>
+                                <li><span class="link hidden-link" data-link="/terms-of-service"> Terms of service
+                                    </span></li>
+                                <li><span class="link hidden-link" data-link="/privacy-policy"> Privacy policy </span>
+                                </li>
+                                <li><span class="link hidden-link" data-link="/cookies-policy"> Cookies policy </span>
+                                </li>
+                                <li><span class="link hidden-link" data-link="/aml-kyc-policy"> AML/KYC Policy </span>
+                                </li>
+                                <li><span class="link hidden-link" data-link="/legal-dashboard"> Legal Dashboard </span>
+                                </li>
+                                <li><span class="link hidden-link" data-link="https://t.me/AtomicWalletNews"> News
+                                    </span></li>
+                                <li><span class="link hidden-link" data-link="/press-kit"> Press Kit </span></li>
+                                <li><a class="link" href="/blog"> Blog </a></li>
+                                <li><span class="link hidden-link" data-link="/academy"> Academy </span></li>
+                                <li><span class="link hidden-link"
+                                        data-link="https://atomicwallet.io/academy/ambassador-program"> Ambassador
+                                        Program </span></li>
+                                <li><span class="link hidden-link" data-link="/contact-us"> Contact Us </span></li>
+                                <li><span class="link hidden-link" data-link="/testimonials"> Testimonials &amp; Reviews
+                                    </span></li>
+                                <li><span class="link hidden-link" data-link="/about-us"> About us </span></li>
+                                <li><a class="link" href="/sitemap"> Sitemap </a></li>
+                                <li><span class="link hidden-link" data-link="/careers"> Careers </span></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <div class="footer-title"> Buy Crypto <div class="footer-title__plus"></div>
+                            </div>
+                            <ul class="footer-list">
+                                <li><a class="link" href="/buy-bitcoin"> Buy Bitcoin </a></li>
+                                <li><a class="link" href="/buy-ethereum"> Buy Ethereum </a></li>
+                                <li><a class="link" href="/buy-binance-coin"> Buy Binance Coin </a></li>
+                                <li><a class="link" href="/buy-bitcoin-cash"> Buy Bitcoin Cash </a></li>
+                                <li><a class="link" href="/buy-ripple"> Buy XRP </a></li>
+                                <li><a class="link" href="/buy-litecoin"> Buy Litecoin </a></li>
+                                <li><a class="link" href="/buy-solana"> Buy Solana </a></li>
+                                <li><a class="link" href="/buy-dogecoin"> Buy Dogecoin </a></li>
+                                <li><a class="link" href="/buy-terra-luna"> Buy Luna </a></li>
+                                <li><a class="link" href="/buy-tether-usd"> Buy USDT </a></li>
+                                <li><a class="link" href="/buy-cardano"> Buy Cardano </a></li>
+                                <li><a class="link" href="/buy-algorand"> Buy Algorand </a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <div class="footer-title"> Wallets <div class="footer-title__plus"></div>
+                            </div>
+                            <ul class="footer-list">
+                                <li><a class="link" href="/bitcoin-wallet"> Bitcoin (BTC) Wallet </a></li>
+                                <li><a class="link" href="/solana-wallet"> Solana (SOL) Wallet </a></li>
+                                <li><a class="link" href="/monero-wallet"> Monero (XMR) Wallet </a></li>
+                                <li><a class="link" href="/ethereum-wallet"> Ethereum (ETH) Wallet </a></li>
+                                <li><a class="link" href="/tether-usdt-wallet"> USDT Wallet </a></li>
+                                <li><a class="link" href="/algorand-wallet"> Algorand (ALGO) Wallet </a></li>
+                                <li><a class="link" href="/cardano-wallet"> Cardano (ADA) Wallet </a></li>
+                                <li><a class="link" href="/theta-wallet"> Theta (THETA) Wallet </a></li>
+                                <li><a class="link" href="/polygon-wallet"> Polygon (MATIC) Wallet </a></li>
+                                <li><a class="link" href="/litecoin-wallet"> Litecoin (LTC) Wallet </a></li>
+                                <li><a class="link" href="/near-protocol-wallet"> Near Wallet </a></li>
+                                <li><a class="link" href="/dogecoin-wallet"> Dogecoin (DOGE) Wallet </a></li>
+                                <li><a class="link" href="/nft-wallet"> NFT Wallet </a></li>
+                                <li><a class="link" href="/tezos-wallet"> Tezos (XTZ) Wallet </a></li>
+                                <li><a class="link" href="/avalanche-wallet"> Avalanche (AVAX) Wallet </a></li>
+                                <li><a class="link" href="/bitcoin-cash-wallet"> Bitcoin Cash Wallet </a></li>
+                                <li><a class="link" href="/iota-wallet"> Iota Wallet </a></li>
+                                <li><a class="link" href="/tron-wallet"> TRON (TRX) Wallet </a></li>
+                                <li><a class="link" href="/polkadot-wallet"> Polkadot (DOT) Wallet </a></li>
+                                <li><a class="link" href="/eos-wallet"> EOS Wallet </a></li>
+                                <li><a class="link" href="/fantom-ftm-wallet"> Fantom (FTM) Wallet </a></li>
+                                <li><a class="link" href="/neo-wallet"> NEO Wallet </a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <div class="footer-title"> Staking <div class="footer-title__plus"></div>
+                            </div>
+                            <ul class="footer-list">
+                                <li><a class="link" href="/staking"> Staking </a></li>
+                                <li><a class="link" href="/awc-staking"> AWC Staking </a></li>
+                                <li><a class="link" href="/cosmos-atom-staking"> Cosmos Staking </a></li>
+                                <li><a class="link" href="/tezos-staking"> Tezos Staking </a></li>
+                                <li><a class="link" href="/band-staking"> Band Protocol Staking </a></li>
+                                <li><a class="link" href="/vechain-staking"> VeChain Staking </a></li>
+                                <li><a class="link" href="/zilliqa-staking"> Zilliqa Staking </a></li>
+                                <li><a class="link" href="/cardano-staking"> Cardano Staking </a></li>
+                                <li><a class="link" href="/icon-staking"> ICON Staking </a></li>
+                                <li><a class="link" href="/solana-staking"> Solana Staking </a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <div class="footer-title"> Exchange Crypto <div class="footer-title__plus"></div>
+                            </div>
+                            <ul class="footer-list">
+                                <li><a class="link" href="/btc-to-eth-exchange"> Exchange BTC to ETH </a></li>
+                                <li><a class="link" href="/usdt-to-btc-exchange"> Exchange USDT to BTC </a></li>
+                                <li><a class="link" href="/btc-to-xmr-exchange"> Exchange BTC to XMR </a></li>
+                                <li><a class="link" href="/xrp-to-btc-exchange"> Exchange XRP to BTC </a></li>
+                                <li><a class="link" href="/bnb-to-btc-exchange"> Exchange BNB to BTC </a></li>
+                                <li><a class="link" href="/btc-to-usdt-exchange"> Exchange BTC to USDT </a></li>
+                                <li><a class="link" href="/btc-to-bnb-exchange"> Exchange BTC to BNB </a></li>
+                                <li><a class="link" href="/btc-to-trx-exchange"> Exchange BTC to TRX </a></li>
+                                <li><a class="link" href="/btc-to-ltc-exchange"> Exchange BTC to LTC </a></li>
+                                <li><a class="link" href="/btc-to-wbtc-exchange"> Exchange BTC to WBTC </a></li>
+                                <li><a class="link" href="/doge-to-usdt-exchange"> Exchange DOGE to USDT </a></li>
+                                <li><a class="link" href="/btc-to-bch-exchange"> Exchange BTC to BCH </a></li>
+                                <li><a class="link" href="/btc-to-zec-exchange"> Exchange BTC to ZEC </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <link rel="stylesheet" type="text/css" href="/assets/fonts.css">
+    <!-- <script type="text/javascript"
+        id="">(function () { try { window.setTimeout(function () { dataLayer.push({ event: "afterLoad" }) }, 1500) } catch (a) { } })();</script> -->
+    <script type="text/javascript"
+        id="">var platforms = document.querySelectorAll(".platform"); platforms.forEach(function (a) { a.addEventListener("click", function () { this.hasAttribute("data-download") ? dataLayer.push({ event: "download", os: this.getAttribute("data-download") }) : console.warn("Link has no data-attribute") }) });</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" type="text/javascript"></script>
+        <script src="https://unpkg.com/navigo"></script>
+        <script src="/assets/custom-script.js" defer></script>
+</body>
+
+</html>

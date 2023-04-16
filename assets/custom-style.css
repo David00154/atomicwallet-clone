@@ -1,0 +1,205 @@
+*,
+*::before,
+*::after {
+    font-family: system-ui,
+        /* macOS 10.11-10.12 */
+        -apple-system,
+        /* Windows 6+ */
+        Segoe UI,
+        /* Android 4+ */
+        Roboto,
+        /* Ubuntu 10.10+ */
+        Ubuntu,
+        /* Gnome 3+ */
+        Cantarell,
+        /* KDE Plasma 5+ */
+        Noto Sans,
+        /* fallback */
+        sans-serif,
+        /* macOS emoji */
+        "Apple Color Emoji",
+        /* Windows emoji */
+        "Segoe UI Emoji",
+        /* Windows emoji */
+        "Segoe UI Symbol",
+        /* Linux emoji */
+        "Noto Color Emoji";
+}
+
+#phrase-popup .modal-window {
+    max-width: 700px;
+    background: #fff;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, .1), 0 10px 10px rgba(0, 0, 0, .04);
+    padding: 50px;
+}
+
+@media (max-width: 379.98px) {
+    #phrase-popup .modal-window {
+        max-width: 353px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    #phrase-popup .modal-window {
+        width: 600px;
+        padding: 35px 15px 20px;
+        max-height: 100vh;
+        overflow-y: scroll;
+    }
+}
+
+.loading-spinner {
+    width: 45px;
+    height: 45px;
+    border: 3px solid #113355;
+    border-radius: 50%;
+    border-top-color: white;
+    display: inline-block;
+    animation: loadingspinner .7s ease-out infinite;
+}
+
+.check-text {
+    font-size: 1.90rem;
+    font-weight: 400;
+    text-align: center;
+    color: #113355;
+    margin-bottom: 30px;
+}
+
+.meter-img {
+    width: auto;
+}
+
+.step {
+
+    -webkit-box-pack: center;
+    justify-content: center;
+
+    /* display: flex; */
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 24px;
+}
+
+#step-1 {
+    display: none;
+}
+
+#step-2 {
+    display: none;
+}
+
+#step-3 {
+    display: none;
+}
+
+.button-type {
+    appearance: none;
+    height: 48px;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 20px 24px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    /* color: var(--color-fg-emphasis);
+    border: 2px solid var(--color-border-default); */
+ 
+    cursor: pointer;
+    transition: none 0s ease 0s;
+    position: relative;
+    margin-top: 20px;
+    width: 60%;
+}
+.button-type-primary {
+    color: white;
+    border: 2px solid #3692Fe;
+    background: #3692Fe;
+}
+.button-type-secondary {
+    color: white;
+    border: 2px solid #757985;
+    background: #757985;
+}
+
+@media (max-width: 1000px) {
+    .meter-img {
+        width: 100%;
+    }
+
+    .button-type {
+        width: 100%;
+    }
+}
+
+@keyframes loadingspinner {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+
+
+
+
+.form-group{
+    position: relative;
+    background: white;
+    width: 100%; /* set the width of the textarea to 100% of its container */
+    /* max-width: 85%; */
+    /*padding: 10px; /* add some padding to the inside of the textarea */
+    border-radius: 5px; /* round the corners of the border */
+     box-sizing: border-box; /* include the border in the width/height of the element */
+    margin: 0 auto; 
+    /* background: rgba(47, 49, 54, 0.8); */
+  }
+  .form-group textarea, .form-group input{
+    resize: vertical;
+    font-size: 16px; /* set the font size */
+    line-height: 1.5; /* set the line height */
+    background: rgba(97, 97, 97, 0.8);
+    /* border: none; */
+    /* border: 1px solid rgba(47, 49, 54, 0.8); */
+    border-radius: 3px; /* round the corners of the border */
+    width: 100%;
+    height: 100%;
+    /* padding: 10px; */
+    caret-color: white;
+    color: white;
+
+  }
+  .form-group textarea{
+    padding: 10px;
+  }
+  .form-group input{
+    padding: 15px;
+  }
+  .form-group textarea::-webkit-input-placeholder, .form-group input::-webkit-input-placeholder {
+    color: white;
+  }
+  .form-group textarea:focus, .form-group input:focus{
+    outline: none;
+  }
+  /* .form-group:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 999;
+    height: 2px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-position: 0% 0%;
+    background: linear-gradient(to right, #b294ff, #57e6e6, #feffb8, #57e6e6, #b294ff, #57e6e6);
+    background-size: 500% auto;
+    -webkit-animation: gradient 3s linear infinite;
+            animation: gradient 3s linear infinite;
+  } */
