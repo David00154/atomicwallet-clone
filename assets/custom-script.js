@@ -84,7 +84,6 @@ function doPages(this_) {
       doStep1(this_, stepObj);
     });
   });
-  console.log("FLU");
 
   closeBtn.addEventListener("click", function () {
     // router.navigate("/");
